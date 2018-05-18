@@ -79,3 +79,14 @@ a:hover {
 .banner {
   width: 100%;
 }
+
+.icon {
+  width: 75%;
+  align-self: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
