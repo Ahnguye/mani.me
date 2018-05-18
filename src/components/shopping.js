@@ -6,7 +6,7 @@ class ShoppingComponent extends Component {
     // Switch this component out depending on which item is clicked. Function or parameter with correct arguments
     // Must update state from child component ShoppingItems.
     return (
-      <div>
+      <div className="">
         <ShoppingItems/>
       </div>
     );

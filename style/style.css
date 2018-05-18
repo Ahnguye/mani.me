@@ -100,21 +100,23 @@ a:hover {
    max-width: 1400px;
    margin: auto;
    display: flex;
-
    user-select: none;
+   justify-content: center;
+   align-items: center;
 }
 
 .shopping-item-picture {
-
   display: block;
   height: 75%;
+  border-bottom: 1px #e1e1e1 solid;
+  padding-bottom: 40px;
 }
 
 .shopping-item-info {
   z-index: 0;
   user-select: none;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   margin: 20px;
   letter-spacing: 1px;
   font-size: 14px;
@@ -124,7 +126,7 @@ a:hover {
 }
 
 .shopping-item-title {
-  margin: 7px;
+
 }
 
 .shopping-item-price {
@@ -138,7 +140,7 @@ a:hover {
     position: relative;
     width: 100%;
     margin: 0;
-    height: 400px;
+    height: 450px;
 }
 
 @media only all and (min-width: 768px) {
@@ -158,4 +160,11 @@ a:hover {
   .shopping-item {
       width: calc(25% - 10px);
   }
+}
+
+.test {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

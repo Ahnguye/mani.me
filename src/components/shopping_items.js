@@ -29,6 +29,7 @@ class ShoppingItems extends Component {
         <Link to={link} className="shopping-item col-md-2">
           <img className="shopping-item-picture" src={item.url}/>
           <div className="shopping-item-info">
+            <div className="shopping-item-title">Title</div>
             <div className="shopping-item-title">Nail {item.name}</div>
             <div className="shopping-item-price">Description</div>
           </div>
@@ -40,10 +41,12 @@ class ShoppingItems extends Component {
 
 
     return (
-      <div className=" row-eq-height">
-        {shoppingItemsArray}
-
+      <div>
+        <div className="row-eq-height test">
+          {shoppingItemsArray}
+        </div>
       </div>
+
     );
   }
 }
