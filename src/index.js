@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import SplashPage from './components/splash_page';
 import NavMenu from './components/nav_menu';
 import ShoppingComponent from './components/shopping.js';
+import ProductItem from './components/product_item.js';
 
 import reducers from './reducers';
 
@@ -18,6 +19,11 @@ class Temp2 extends React.Component {
   render() {return <div>test2</div>};
 }
 
+const productItemContainer = ({ match }) => (
+  <div>
+    <ProductItem id={match.params.id}/>
+  </div>
+)
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
@@ -28,6 +34,7 @@ ReactDOM.render(
         <Route exact path="/" component={SplashPage} />
         <Route path="/about" component={Temp2} />
         <Route exact path="/shop" component={ShoppingComponent} />
+        <Route path="/shop/item/:id" render={productItemContainer} />
         <Route path="/goodbye" component={Temp2} />
         <Route path="/goodbye" component={Temp2} />
         <Route path="/goodbye" component={Temp2} />
