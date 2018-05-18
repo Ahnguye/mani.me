@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StripeProvider } from 'react-stripe-elements';
 import { Elements } from 'react-stripe-elements';
+import CartContainerComponent from './cart_container_component';
 
 class CartComponent extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class CartComponent extends Component {
       <div>
         <StripeProvider apiKey="pk_test_TWNG2QuoprQhnRNOECF6KKtT">
           <Elements>
-            <div></div>
+            <CartContainerComponent />
           </Elements>
         </StripeProvider>
       </div>

@@ -238,3 +238,241 @@ select {
   letter-spacing: 2px;
   line-height: 18px;
 }
+
+////////////////////////////////
+
+.Checkout-right-element {
+  width: 50%;
+  padding: 20px;
+  color: #313131;
+}
+
+.Checkout-continue-button {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+}
+
+.Order-summary-element {
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #919191;
+}
+
+.Order-summary-left-element {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+
+////////////////////////////
+
+
+
+.Checkout-container {
+  width: 60%;
+  margin: auto;
+}
+
+.Checkout-top-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Checkout-middle-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.Checkout-bottom-container {
+  width: 100%;
+}
+
+.Checkout-navigation-title {
+  font-family: Roboto;
+  color: #919191;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Section-selected {
+  color: #313131;
+  font-weight: 500;
+}
+
+@media only all and (max-width: 999px) {
+  .Checkout-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .Checkout-middle-container {
+    display: block;
+  }
+}
+
+@media only all and (min-width: 1000px) {
+  .Checkout-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media only all and (min-width: 1200px) {
+  .Checkout-container {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+.Checkout-left-element {
+  width: 50%;
+  padding: 20px;
+}
+
+.Checkout-right-element {
+  width: 50%;
+  padding: 20px;
+}
+
+.Input-box {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: Roboto;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border: 1px solid #919191;
+  background-color: #fff;
+}
+
+.Card-row {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+  width: 100%;
+  display: flex;
+}
+
+.Card-row-element {
+  width: calc(50% - 10px);
+  text-transform: none !important;
+}
+
+.Card-row-spacer {
+  width: 20px;
+}
+
+.Card-row-names {
+  padding-top: 0px;
+  padding: 0px 0px;
+}
+
+.invalid {
+  border-color: #ef2d2d;
+}
+
+.rb {
+  font-family: Roboto;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.Input-box {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.Shipping-info {
+  font-family: Roboto;
+  color: #313131;
+}
+
+.Shipping-button {
+  width: 30%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.Shipping-button-unselected {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.hide {
+  display: none;
+}
+
+.h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.Nav-link {
+  text-decoration: underline;
+}
+
+.Info-container {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.Info-top-container {
+  width: 100%;
+  display: block;
+}
+
+@media only all and (max-width: 999px) {
+  .Checkout-left-element {
+    width: 100%;
+  }
+}
