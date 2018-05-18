@@ -90,3 +90,72 @@ a:hover {
   flex-direction: column;
   text-align: center;
 }
+
+
+//////////////////////
+
+
+
+.shopping-item-container {
+   max-width: 1400px;
+   margin: auto;
+   display: flex;
+
+   user-select: none;
+}
+
+.shopping-item-picture {
+
+  display: block;
+  height: 75%;
+}
+
+.shopping-item-info {
+  z-index: 0;
+  user-select: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(37,36,34,.8);
+  height: 25%;
+}
+
+.shopping-item-title {
+  margin: 7px;
+}
+
+.shopping-item-price {
+  font-weight: 550;
+}
+
+ .shopping-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 400px;
+}
+
+@media only all and (min-width: 768px) {
+  .shopping-item {
+      width: calc(50% - 10px);
+      margin: 0 5px;
+  }
+}
+
+@media only all and (min-width: 800px) {
+  .shopping-item {
+      width: calc(33.33333% - 10px);
+  }
+}
+
+@media only all and (min-width: 1280px) {
+  .shopping-item {
+      width: calc(25% - 10px);
+  }
+}

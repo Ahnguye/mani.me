@@ -5,6 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import SplashPage from './components/splash_page';
 import NavMenu from './components/nav_menu';
+import ShoppingComponent from './components/shopping.js';
 
 import reducers from './reducers';
 
@@ -24,9 +25,9 @@ ReactDOM.render(
       <div>
         <NavMenu />
 
-        <Route path="/" component={SplashPage} />
+        <Route exact path="/" component={SplashPage} />
         <Route path="/about" component={Temp2} />
-        <Route path="/goodbye" component={Temp2} />
+        <Route exact path="/shop" component={ShoppingComponent} />
         <Route path="/goodbye" component={Temp2} />
         <Route path="/goodbye" component={Temp2} />
         <Route path="/goodbye" component={Temp2} />
