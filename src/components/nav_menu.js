@@ -7,9 +7,13 @@ export default class NavMenu extends Component {
       <div>
         <nav className="navbar navbar-default">
           <div className="navbar-middle">
-            <img className="logo" src="https://d1raprm0ezfai1.cloudfront.net/Logo/Manime+logo.png" />
+            <a href="#">
+              <img className="logo" src="https://d1raprm0ezfai1.cloudfront.net/Logo/Manime+logo.png" />
+            </a>
             <div className="dropdown">
-              <button className="dropbtn">HOME</button>
+              <a href="#">
+                <button className="dropbtn">HOME</button>
+              </a>
             </div>
             <div className="dropdown">
               <button className="dropbtn">ABOUT US</button>
@@ -28,10 +32,10 @@ export default class NavMenu extends Component {
               </div>
             </div>
             <div className="dropdown">
-              <button className="dropbtn">STUDIO</button>
+              <button className="dropbtn">SHOP</button>
               <div className="dropdown-content">
-                <a href="#">ARTIST GALLERY</a>
-                <a href="#">USER CREATIONS</a>
+                <a href="/shop">ARTIST GALLERY</a>
+                <a href="/shop">USER CREATIONS</a>
               </div>
             </div>
           </div>

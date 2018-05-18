@@ -9,6 +9,9 @@ class ProductItem extends Component {
 
   }
 
+  addToCart = (event) => {
+    console.log(event);
+  }
 
   render() {
     return (
@@ -55,7 +58,7 @@ class ProductItem extends Component {
 
           </div>
           <div className="detail-button">
-            <button className="detail-add-cart">
+            <button onClick={(event) => this.addToCart(event)} className="detail-add-cart">
               ADD TO BAG
             </button>
           </div>
