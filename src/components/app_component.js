@@ -10,28 +10,64 @@ import CartComponent from './cart.js';
 export default class AppComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      products: []
+    const _products = localStorage.getItem('products');
+    console.log(_products);
+    if (_products) {
+      this.state = {
+        products: JSON.parse(_products)
+      };
+    } else {
+      this.state = {
+        products: []
+      };
     }
   }
 
 
-  addProduct = (product) => {
-    console.log(product.name);
-
-    let o = this.state.products;
-    o[0] = 1;
-
-    this.setState({
-      products: o
-    });
-
-    console.log(this.state.products[0]);
-  }
-
   removeProduct = (product) => {
 
+    let currentProduct = {url: product.url, name: product.name, category: product.category, price: product.price, quantity: 1};
+    let foundIndex = this.state.products.findIndex((product)=>this.productEqual(product, currentProduct));
+
+    if (foundIndex != -1) {
+      const newProducts = this.state.products;
+      newProducts[foundIndex].quantity -= currentProduct.quantity;
+      if (newProducts[foundIndex].quantity < 1) {
+        newProducts.splice(foundIndex, 1);
+      }
+      this.setState({
+        products: newProducts
+      });
+    }
+    console.log(this.state.products);
+    localStorage.setItem('products', JSON.stringify(this.state.products));
+
   }
+
+  addProduct = (product) => {
+    //console.log(product);
+
+    let currentProduct = {url: product.url, name: product.name, category: product.category, price: product.price, quantity: 1};
+    let foundIndex = this.state.products.findIndex((product)=>this.productEqual(product, currentProduct));
+
+    const newProducts = this.state.products;
+    if (foundIndex == -1) {
+      newProducts.push(currentProduct);
+    } else {
+      newProducts[foundIndex].quantity += currentProduct.quantity;
+    }
+    this.setState({
+      products: newProducts
+    });
+    console.log(this.state.products);
+    localStorage.setItem('products', JSON.stringify(this.state.products));
+
+  }
+
+  productEqual(currentItem, currentProduct) {
+    return currentItem.name == currentProduct.name;  // && currentItem.size == currentProduct.size;
+  }
+
 
   productItemContainer = ({ match }) => (
     <div>
