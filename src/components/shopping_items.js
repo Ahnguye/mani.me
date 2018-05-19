@@ -26,7 +26,7 @@ class ShoppingItems extends Component {
     const shoppingItemsArray = urls.map((item) => {
       const link = '/shop/item/' + item.name;
       return (
-        <Link to={link} className="shopping-item col-md-2">
+        <Link to={link} className="shopping-item col-12 col-sm-6 col-md-3 col-lg-2">
           <img className="shopping-item-picture" src={item.url}/>
           <div className="shopping-item-info">
             <div className="shopping-item-title">Title</div>

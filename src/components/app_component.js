@@ -28,7 +28,7 @@ export default class AppComponent extends Component {
 
     let currentProduct = {url: product.url, name: product.name, category: product.category, price: product.price, quantity: 1};
     let foundIndex = this.state.products.findIndex((product)=>this.productEqual(product, currentProduct));
-
+    console.log(product.name);
     if (foundIndex != -1) {
       const newProducts = this.state.products;
       newProducts[foundIndex].quantity -= currentProduct.quantity;
@@ -38,6 +38,7 @@ export default class AppComponent extends Component {
       this.setState({
         products: newProducts
       });
+      console.log("here");
     }
     console.log(this.state.products);
     localStorage.setItem('products', JSON.stringify(this.state.products));
@@ -79,12 +80,11 @@ export default class AppComponent extends Component {
     return (
       <div>
         <NavMenu />
-
         <Route exact path="/" component={SplashPage} />
         <Route path="/about" component={SplashPage} />
         <Route exact path="/shop" component={ShoppingComponent} />
         <Route path="/shop/item/:id" render={this.productItemContainer} />
-        <Route path="/cart" render={() => <CartComponent products={this.products} removeProduct={this.removeProduct}/>} />
+        <Route path="/cart" render={() => <CartComponent products={this.state.products} addProduct={this.addProduct} removeProduct={this.removeProduct}/>} />
         <Route path="/goodbye" component={SplashPage} />
         <Route path="/goodbye" component={SplashPage} />
       </div>

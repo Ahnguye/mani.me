@@ -31,7 +31,7 @@ class CartContainerComponent extends React.Component {
     return (
       <div>
         <form onSubmit={(ev) => this.handleSubmit(ev)}>
-          <OrderSummaryComponent handleChange={this.handleChange()}/>
+          <OrderSummaryComponent handleChange={this.handleChange()} products={this.props.products} addProduct={this.props.addProduct} removeProduct={this.props.removeProduct}/>
         </form>
       </div>
     );

@@ -14,6 +14,10 @@
 .nav-menu-container {
   width: 50%;
 }
+
+.navbar{
+  justify-content: center !important;
+}
 .navbar-middle {
   text-align: center;
 }
@@ -77,18 +81,90 @@ a:hover {
 
 
 .banner {
-  width: 100%;
+  max-width: 100%;
+  width: 100% !important;
+  height: 60% !important;
+
 }
 
 .icon {
-  width: 75%;
+  max-height: 100px;
   align-self: center;
+}
+
+.icons {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.icons-title {
+  text-align: center;
+  padding-top: 75px;
+  width: 100%;
 }
 
 .icon-container {
   display: flex;
   flex-direction: column;
   text-align: center;
+
+}
+
+.icon-container-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media only all and (min-width: 400px) {
+  .icon-container-2 { margin-top: -90px; }
+}
+@media only all and (min-width: 600px) {
+  .icon-container-2 { margin-top: -100px; }
+}
+@media only all and (min-width: 800px) {
+  .icon-container-2 { margin-top: -150px; }
+}
+@media only all and (min-width: 1000px) {
+  .icon-container-2 { margin-top: -200px; }
+}
+@media only all and (min-width: 1200px) {
+  .icon-container-2 { margin-top: -350px; }
+}
+
+.stagger-grid-image {
+  width: 100%;
+}
+
+.white-box {
+  border-top: 5px solid #333333;
+  margin: -20px 30px 0;
+  padding: 20px 20px 29px;
+  position: relative;
+  background-color: white;
+  padding-bottom: 10%;
+}
+
+.stagger-grid-container {
+  padding: 10%;
+  background-color: rgb(244, 237, 229);
+  margin-top: 250px;
+}
+
+.stagger-grid-title {
+  text-align: center;
+  width: 100%;
+  margin: 5%;
+  border-bottom: 1px #616161 solid;
+
 }
 
 
@@ -292,6 +368,7 @@ select {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   padding-top: 30px;
@@ -510,4 +587,71 @@ select.Input-box {
 
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
+}
+
+////////////////////////////////////////////
+
+
+.cart-item-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.cart-middle-item {
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  color: #313131;
+}
+
+.cart-middle-left-item {
+  width: 50%;
+  text-align: left;
+
+}
+
+.cart-middle-right-item {
+  width: 50%;
+  text-align: right;
+}
+
+.cart-right-item {
+  width: 40%;
+  text-align: center;
+}
+
+.cart-item-img {
+  width: 20%;
+}
+
+.cart-item-title {
+  text-align: left;
+}
+
+.cart-item-price {
+  text-align: right;
+}
+
+.cart-item-quantity {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+@media only all and (min-width: 750px) {
+  .ctr {
+    display: flex;
+    justify-content: center !important;
+  }
 }

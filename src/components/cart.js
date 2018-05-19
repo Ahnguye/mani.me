@@ -15,7 +15,7 @@ class CartComponent extends Component {
       <div>
         <StripeProvider apiKey="pk_test_TWNG2QuoprQhnRNOECF6KKtT">
           <Elements>
-            <CartContainerComponent />
+            <CartContainerComponent products={this.props.products} addProduct={this.props.addProduct} removeProduct={this.props.removeProduct}/>
           </Elements>
         </StripeProvider>
       </div>

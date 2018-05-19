@@ -2,26 +2,56 @@ import React, { Component } from 'react';
 import StripeCard from './stripe_card.js';
 
 class OrderSummaryComponent extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   calculateTotal = () => {
-    /*
     let _products = this.props.products;
     let _total = 0;
-
     console.log(_products);
     for (let i = 0; i < _products.length; ++i) {
-      _total += _products[i].price;
+      _total += _products[i].price * _products[i].quantity;
     }
     return _total;
-    */
-    return 0;
+  }
+  createUserItems(products){
+    return (
+      <div>
+        {products.map((product) => <div>{this.createUserItem(product)}</div>)}
+      </div>
+    );
+  }
+  createUserItem = (item) => {
+    return (
+      <div className="cart-item-container">
+        <img src={item.url} className="cart-item-img ib"/>
+        <div className="cart-middle-item ib">
+          <div className="cart-middle-left-item ib">
+            <span className="cart-item-title">{item.name}</span>
+          </div>
+          <div className="cart-middle-right-item ib">
+            <span className="cart-item-price">${item.price}.00</span>
+            <span className="cart-item-size"> </span>
+          </div>
+
+        </div>
+        <div className="cart-right-item ib">
+          <span className="cart-item-quantity">{item.quantity} </span>
+          <button className="Shipping-button" onClick={() => this.props.addProduct(item)}>+</button>
+          <button className="Shipping-button" onClick={() => this.props.removeProduct(item)}>-</button>
+
+        </div>
+      </div>
+    );
   }
 
   render() {
     return(
-      <div className="Checkout-container">
+      <div className="row justify-content-center">
+      <div className="col-10 col-md-10">
 
-        <div className="Checkout-middle-container">
+        <div className="Checkout-middle-container  col-md-12">
           <div className="col-12 col-md-4">
             <label className="rb">Email</label>
             <input type="text" name="email" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
@@ -68,12 +98,12 @@ class OrderSummaryComponent extends Component {
           </div>
 
         </div>
-        <div className="Checkout-middle-container">
-
+        <div className="Checkout-middle-container col-12 col-md-12">
+          {this.createUserItems(this.props.products)}
         </div>
         <div className="Checkout-bottom-container"></div>
     </div>
-
+    </div>
 
     );
   }

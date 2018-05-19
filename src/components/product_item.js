@@ -26,7 +26,7 @@ class ProductItem extends Component {
     if(this.props.id < urls.length && this.props.id >= 0) {
       console.log(urls[this.props.id]);
       this.state = {
-        item: urls[this.props.id]
+        item: urls[this.props.id-1]
       };
     } else {
       this.state = {
@@ -42,7 +42,7 @@ class ProductItem extends Component {
   render() {
     return (
       <div className="shopping-item-detail-container row-eq-height">
-        <div className="shopping-item-detail-left-container col-3 col-md-1">
+        <div className="shopping-item-detail-left-container col-5 col-md-1">
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
@@ -84,9 +84,12 @@ class ProductItem extends Component {
 
           </div>
           <div className="detail-button">
-            <button onClick={() => this.props.addProduct(this.state.item)} className="detail-add-cart">
-              ADD TO BAG
-            </button>
+            <a href="/cart">
+              <button onClick={() => this.props.addProduct(this.state.item)} className="detail-add-cart">
+                ADD TO BAG
+              </button>
+            </a>
+
           </div>
 
 
