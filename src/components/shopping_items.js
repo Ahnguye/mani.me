@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
-const urls =
+export const urls =
   [
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_1.png", name: "1" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_3.png", name: "2" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_4.png", name: "3" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_5.png", name: "4" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_6.png", name: "5" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_7.png", name: "6" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_8.png", name: "7" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_9.png", name: "8" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_11.png", name: "9" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_10.jpg", name: "10" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_12.jpg", name: "11" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_13.jpg", name: "12" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Gems.png", name: "13" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Flag.png", name: "14" },
-    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Color+dots.png", name: "15" },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_1.png", name: "1", category: 1, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_3.png", name: "2", category: 2, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_4.png", name: "3", category: 3, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_5.png", name: "4", category: 4, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_6.png", name: "5", category: 2, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_7.png", name: "6", category: 3, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_8.png", name: "7", category: 1, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_9.png", name: "8", category: 4, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_11.png", name: "9", category: 2, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_10.jpg", name: "10", category: 3, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_12.jpg", name: "11", category: 4, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Heo_13.jpg", name: "12", category: 1, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Gems.png", name: "13", category: 1, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Flag.png", name: "14", category: 2, price: 30.00 },
+    { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Color+dots.png", name: "15", category: 2, price: 30.00 },
   ];
 
 class ShoppingItems extends Component {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StripeCard from './stripe_card.js';
 
 class OrderSummaryComponent extends Component {
 
@@ -21,7 +22,7 @@ class OrderSummaryComponent extends Component {
       <div className="Checkout-container">
 
         <div className="Checkout-middle-container">
-          <div className="Checkout-left-element">
+          <div className="col-12 col-md-4">
             <label className="rb">Email</label>
             <input type="text" name="email" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
             <label className="rb">First Name</label>
@@ -42,7 +43,10 @@ class OrderSummaryComponent extends Component {
             <input type="text" name="phoneNumber" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
 
           </div>
-          <div className="Checkout-right-element">
+          <div className="col-12 col-md-4">
+            <StripeCard />
+          </div>
+          <div className="col-12 col-md-4">
             <div className="h4">ORDER SUMMARY</div>
             <div className="Order-summary-element">
               <span className="Order-summary-left-element">Original Price</span>
@@ -57,11 +61,14 @@ class OrderSummaryComponent extends Component {
               <span className="Order-summary-right-element">0.00</span>
             </div>
             <div className="Order-summary-element">
-              <h2 className="Order-summary-left-element">TOTAL (USD)</h2>
-              <h2 className="Order-summary-right-element">${this.calculateTotal()}</h2>
+              <h4 className="Order-summary-left-element">TOTAL (USD):    ${this.calculateTotal()}</h4>
+              <h2 className="Order-summary-right-element"></h2>
             </div>
-            <button className="Checkout-continue-button">SUBMIT ORDER</button>
+            <button className="Checkout-submit-button">SUBMIT ORDER</button>
           </div>
+
+        </div>
+        <div className="Checkout-middle-container">
 
         </div>
         <div className="Checkout-bottom-container"></div>

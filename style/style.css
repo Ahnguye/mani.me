@@ -241,12 +241,6 @@ select {
 
 ////////////////////////////////
 
-.Checkout-right-element {
-  width: 50%;
-  padding: 20px;
-  color: #313131;
-}
-
 .Checkout-continue-button {
   width: 100%;
   text-transform: uppercase;
@@ -281,7 +275,7 @@ select {
 
 .Checkout-container {
   width: 60%;
-  margin: auto;
+  margin: auto !important;
 }
 
 .Checkout-top-container {
@@ -326,6 +320,7 @@ select {
   .Checkout-container {
     width: 100%;
     padding: 20px;
+    margin: auto;
   }
   .Checkout-middle-container {
     display: block;
@@ -336,6 +331,7 @@ select {
   .Checkout-container {
     width: 90%;
     padding: 20px;
+    margin: auto;
   }
 }
 
@@ -343,6 +339,7 @@ select {
   .Checkout-container {
     width: 80%;
     padding: 20px;
+    margin: auto;
   }
 }
 
@@ -352,7 +349,7 @@ select {
 }
 
 .Checkout-right-element {
-  width: 50%;
+  width: 30%;
   padding: 20px;
 }
 
@@ -440,6 +437,21 @@ select.Input-box {
   margin-bottom: 15px;
 }
 
+.Checkout-submit-button {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+
 .Shipping-button-unselected {
   background-color: #ffffff;
   color: #000000;
@@ -475,4 +487,27 @@ select.Input-box {
   .Checkout-left-element {
     width: 100%;
   }
+}
+
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border: 1px solid #919191;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }
