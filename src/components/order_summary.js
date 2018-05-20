@@ -22,6 +22,8 @@ class OrderSummaryComponent extends Component {
       </div>
     );
   }
+
+
   createUserItem = (item) => {
     return (
       <div className="cart-item-container">
@@ -94,7 +96,7 @@ class OrderSummaryComponent extends Component {
               <h4 className="Order-summary-left-element">TOTAL (USD):    ${this.calculateTotal()}</h4>
               <h2 className="Order-summary-right-element"></h2>
             </div>
-            <button className="Checkout-submit-button">SUBMIT ORDER</button>
+            <button type="submit" className="Checkout-submit-button">SUBMIT ORDER</button>
           </div>
 
         </div>

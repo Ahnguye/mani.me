@@ -1,6 +1,7 @@
 import React from 'react';
 import { injectStripe } from 'react-stripe-elements';
 import OrderSummaryComponent from './order_summary.js';
+import axios from 'axios';
 
 class CartContainerComponent extends React.Component {
 
@@ -15,12 +16,28 @@ class CartContainerComponent extends React.Component {
       lastName: '',
       address: '',
     };
-
-
   }
+
+  onToken = (token, amount, description) => {
+    console.log("called");
+    axios.post("localhost:8080",
+      {
+        description,
+        source: token.id,
+        amount: amount
+      }).then(console.log("success")).catch(console.log("failed"));
+  }
+
+
   handleSubmit = (ev) => {
     ev.preventDefault();
-    console.log("changed");
+    if (this.props.stripe) {
+      this.props.stripe
+      .createToken()
+      .then(payload => this.onToken(payload, 300, "order-test"));
+    } else {
+      console.log('Form submitted before Stripe.js loaded.');
+    }
   }
 
   handleChange = () => {
