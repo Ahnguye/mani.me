@@ -20,7 +20,7 @@ class CartContainerComponent extends React.Component {
 
   onToken = (token, amount, description) => {
     console.log("called");
-    axios.post("http://880bc039.ngrok.io/charge",
+    axios.post("https://880bc039.ngrok.io/charge",
       {
         description,
         source: token.id,
