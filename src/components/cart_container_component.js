@@ -19,12 +19,21 @@ class CartContainerComponent extends React.Component {
   }
 
   onToken = (token, products) => {
+    /*
+      var _products = [];
+      for(var i = 0; i < products.length; ++i) {
+        _products[i] = {};
+        _products[i].name = products[i].name;
+        _products[i].price = products[i].price;
+      }
+    */
+
+    //name: "15", category: 2, price: 30.00
     console.log(token);
-    axios.post("https://880bc039.ngrok.io/charge",
+    axios.post("https://manimebackend.herokuapp.com/charge",
       {
-        source: token.token.card.id,
         token: token,
-        products: products
+        //products: _products
       }).then(console.log("success")).catch(console.log("failed"));
   }
 
