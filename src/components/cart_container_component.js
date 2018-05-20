@@ -18,13 +18,13 @@ class CartContainerComponent extends React.Component {
     };
   }
 
-  onToken = (token, amount, description) => {
-    console.log(token.token.card.id);
+  onToken = (token, products) => {
+    console.log(token);
     axios.post("https://880bc039.ngrok.io/charge",
       {
-        description,
         source: token.token.card.id,
-        amount: amount
+        token: token,
+        products: products
       }).then(console.log("success")).catch(console.log("failed"));
   }
 
@@ -34,7 +34,7 @@ class CartContainerComponent extends React.Component {
     if (this.props.stripe) {
       this.props.stripe
       .createToken()
-      .then(payload => this.onToken(payload, 300, "order-test"));
+      .then(payload => this.onToken(payload, this.props.products));
     } else {
       console.log('Form submitted before Stripe.js loaded.');
     }
