@@ -9,12 +9,28 @@ class OrderSummaryComponent extends Component {
   calculateTotal = () => {
     let _products = this.props.products;
     let _total = 0;
-    console.log(_products);
+
     for (let i = 0; i < _products.length; ++i) {
-      _total += _products[i].price * _products[i].quantity;
+      _total += _products[i].quantity;
     }
-    return _total;
+    //console.log(_products);
+
+    if(this.props.subscription == 3) {
+      if(_total <= 3)
+        return 70;
+      else
+        return 70 + ((_total - 3) * 30);
+    }
+    if(this.props.subscription == 2) {
+      if(_total <= 2)
+        return 50;
+      else
+        return 50 + ((_total - 2) * 30);
+    }
+
+    return 30 * _total;
   }
+
   createUserItems(products){
     return (
       <div>
@@ -56,27 +72,34 @@ class OrderSummaryComponent extends Component {
         <div className="Checkout-middle-container  col-md-12">
           <div className="col-12 col-md-4">
             <label className="rb">Email</label>
-            <input type="text" name="email" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="email" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'email')}/>
             <label className="rb">First Name</label>
-            <input type="text" name="firstName" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="firstName" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'firstName')}/>
             <label className="rb">Last Name</label>
-            <input type="text" name="lastName" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="lastName" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'lastName')}/>
             <label className="rb">Address</label>
-            <input type="text" name="address" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="address" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'address')}/>
             <label className="rb">City</label>
-            <input type="text" name="city" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="city" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'city')}/>
 
             <label className="rb">Country</label>
-            <input type="text" name="country" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="country" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'country')}/>
 
             <label className="rb">Zip Code</label>
-            <input type="text" name="zipCode" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="zipCode" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'zipCode')}/>
             <label className="rb">Phone Number</label>
-            <input type="text" name="phoneNumber" className="Input-box" placeholder="" onChange={this.props.handleChange}/>
+            <input type="text" name="phoneNumber" className="Input-box" placeholder="" onChange={(ev) => this.props.handleChange(ev, 'phoneNumber')}/>
 
           </div>
           <div className="col-12 col-md-4">
             <StripeCard />
+            <br></br>
+
+            <button onClick={(ev) => this.props.setSubscription(ev, 1)} className="Checkout-submit-button-3">TREAT.ME</button>
+            <button onClick={(ev) => this.props.setSubscription(ev, 2)} className="Checkout-submit-button-3">PAMPER.ME</button>
+            <button onClick={(ev) => this.props.setSubscription(ev, 3)} className="Checkout-submit-button-3">DAZZLE.ME</button>
+
+
           </div>
           <div className="col-12 col-md-4">
             <div className="h4">ORDER SUMMARY</div>

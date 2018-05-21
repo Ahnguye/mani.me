@@ -6,19 +6,58 @@ import NavMenu from './nav_menu';
 import ShoppingComponent from './shopping.js';
 import ProductItem from './product_item.js';
 import CartComponent from './cart.js';
+import OrderComplete from './order_complete.js';
+
+const products = [
+  {
+    id: '1h1ggd124232321',
+    quantity: 2,
+    price: 100
+  },
+  {
+    id: '1h1ggd124232322',
+    quantity: 1,
+    price: 100
+  },
+  {
+    id: '1h1ggd124232323',
+    quantity: 1,
+    price: 100
+  },
+  {
+    id: '1h1ggd124232324',
+    quantity: 2,
+    price: 100
+  },
+  {
+    id: '1h1ggd124232325',
+    quantity: 3,
+    price: 100
+  },
+  {
+    id: '1h1ggd124232326',
+    quantity: 4,
+    price: 100
+  },
+  {
+    id: '1h1ggd124232327',
+    quantity: 5,
+    price: 100
+  },
+]
 
 export default class AppComponent extends Component {
   constructor(props) {
     super(props);
     const _products = localStorage.getItem('products');
-    console.log(_products);
+    //console.log(_products);
     if (_products) {
       this.state = {
         products: JSON.parse(_products)
       };
     } else {
       this.state = {
-        products: []
+        products: products
       };
     }
   }
@@ -28,7 +67,7 @@ export default class AppComponent extends Component {
 
     let currentProduct = {url: product.url, name: product.name, category: product.category, price: product.price, quantity: 1};
     let foundIndex = this.state.products.findIndex((product)=>this.productEqual(product, currentProduct));
-    console.log(product.name);
+    //console.log(product.name);
     if (foundIndex != -1) {
       const newProducts = this.state.products;
       newProducts[foundIndex].quantity -= currentProduct.quantity;
@@ -38,9 +77,9 @@ export default class AppComponent extends Component {
       this.setState({
         products: newProducts
       });
-      console.log("here");
+      //console.log("here");
     }
-    console.log(this.state.products);
+    //console.log(this.state.products);
     localStorage.setItem('products', JSON.stringify(this.state.products));
 
   }
@@ -60,7 +99,7 @@ export default class AppComponent extends Component {
     this.setState({
       products: newProducts
     });
-    console.log(this.state.products);
+    //console.log(this.state.products);
     localStorage.setItem('products', JSON.stringify(this.state.products));
 
   }
@@ -85,7 +124,7 @@ export default class AppComponent extends Component {
         <Route exact path="/shop" component={ShoppingComponent} />
         <Route path="/shop/item/:id" render={this.productItemContainer} />
         <Route path="/cart" render={() => <CartComponent products={this.state.products} addProduct={this.addProduct} removeProduct={this.removeProduct}/>} />
-        <Route path="/goodbye" component={SplashPage} />
+        <Route path="/complete" component={OrderComplete} />
         <Route path="/goodbye" component={SplashPage} />
       </div>
     );

@@ -528,6 +528,29 @@ select.Input-box {
   margin-bottom: 15px;
 }
 
+.Checkout-submit-button-3 {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.Checkout-submit-button-3:hover {
+  background-color: pink;
+}
+.Checkout-submit-button-3:focus {
+  background-color: pink;
+}
+.Checkout-submit-button-3::selection {
+  background-color: pink;
+}
+
 
 .Shipping-button-unselected {
   background-color: #ffffff;
