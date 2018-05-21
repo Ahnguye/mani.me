@@ -119,6 +119,8 @@ class OrderSummaryComponent extends Component {
               <h4 className="Order-summary-left-element">TOTAL (USD):    ${this.calculateTotal()}</h4>
               <h2 className="Order-summary-right-element"></h2>
             </div>
+            <label className="rb">Enter Promo Code</label>
+            <input type="text" className="Input-box" placeholder="" />
             <button type="submit" className="Checkout-submit-button">SUBMIT ORDER</button>
           </div>
 
