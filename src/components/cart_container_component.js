@@ -30,7 +30,9 @@ class CartContainerComponent extends React.Component {
 
     //name: "15", category: 2, price: 30.00
     console.log(token);
-    axios.post("https://manimebackend.herokuapp.com/charge",
+
+    axios.post("https://880bc039.ngrok.io/charge",
+    //axios.post("https://manimebackend.herokuapp.com/charge",
       {
         token: token,
         //products: _products
@@ -40,6 +42,7 @@ class CartContainerComponent extends React.Component {
 
   handleSubmit = (ev) => {
     ev.preventDefault();
+    console.log("form submit: ", ev);
     if (this.props.stripe) {
       this.props.stripe
       .createToken()
