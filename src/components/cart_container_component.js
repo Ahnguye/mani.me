@@ -39,14 +39,32 @@ class CartContainerComponent extends React.Component {
 */
 
   onToken = (token, products) => {
-      // var _products = [];
-      // for(var i = 0; i < products.length; ++i) {
-      //   _products[i] = {};
-      //   _products[i].name = products[i].name;
-      //   _products[i].price = products[i].price;
-      // }
 
-    //name: "15", category: 2, price: 30.00
+    let _total = 0;
+    let totalprice = 0;
+
+    for (let i = 0; i < products.length; ++i) {
+      _total += products[i].quantity;
+    }
+    if(this.state.subscription == 3) {
+      if(_total <= 3)
+        totalprice = 70;
+      else
+        totalprice = 70 + ((_total - 3) * 30);
+    }
+    else if(this.state.subscription == 2) {
+      if(_total <= 2)
+        totalprice = 50;
+      else
+        totalprice = 50 + ((_total - 2) * 30);
+    }
+    else {
+      totalprice = 30 * _total;
+    }
+
+
+    console.log(totalprice);
+
     var formData = {
       email: this.state.email,
       firstName: this.state.firstName,
@@ -56,7 +74,7 @@ class CartContainerComponent extends React.Component {
       country: this.state.country,
       zipCode: this.state.zipCode,
       phoneNumber: this.state.phoneNumber,
-      total: this.state.total
+      total: totalprice
     }
     //console.log(token);
     axios.post("https://manimebackend.herokuapp.com/",
