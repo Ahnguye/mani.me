@@ -82,7 +82,7 @@ class CartContainerComponent extends React.Component {
         token: token,
         products: products,
         ...formData
-      }).then().catch();
+      }).then(response => {console.log(response)}).catch(error => {console.log(error.response)});
   }
 
 
