@@ -2,6 +2,8 @@ import React from 'react';
 import { injectStripe } from 'react-stripe-elements';
 import OrderSummaryComponent from './order_summary.js';
 import axios from 'axios';
+import _ from 'lodash';
+import { withRouter } from 'react-router-dom';
 
 class CartContainerComponent extends React.Component {
 
@@ -19,7 +21,8 @@ class CartContainerComponent extends React.Component {
       country: '',
       zipCode: '',
       phoneNumber: '',
-      subscription: 1
+      subscription: 1,
+      orderComplete: false
     };
   }
 
@@ -30,14 +33,6 @@ class CartContainerComponent extends React.Component {
       subscription: num
     });
   }
-/*
-  changeTotal = (num) => {
-    this.setState({
-      total: num
-    });
-  }
-*/
-
   onToken = (token, products) => {
     console.log(this.props.products);
     let _total = 0;
@@ -84,8 +79,9 @@ class CartContainerComponent extends React.Component {
         token: token,
         products: products,
         ...formData
-      }).then(response => {console.log(response)}).catch(error => {console.log(error.response)});
-
+      }).then(response => this.props.setOrderStatus(true)).catch(error => {console.log(error.response)});
+      //this.props.setOrderStatus(true);
+      //set state
   }
 
 
@@ -99,7 +95,6 @@ class CartContainerComponent extends React.Component {
     } else {
       console.log('Form submitted before Stripe.js loaded.');
     }
-
   }
 
   handleChange = (ev, key) => {
@@ -107,6 +102,7 @@ class CartContainerComponent extends React.Component {
   }
 
   render() {
+    //const submitThrottle = _.debounce(((ev) => this.handleSubmit(ev)), 500);
     return (
       <div>
         <form onSubmit={(ev) => this.handleSubmit(ev)}>

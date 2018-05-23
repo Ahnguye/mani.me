@@ -56,8 +56,8 @@ class OrderSummaryComponent extends Component {
         </div>
         <div className="cart-right-item ib">
           <span className="cart-item-quantity">{item.quantity} </span>
-          <button className="Shipping-button" onClick={() => this.props.addProduct(item)}>+</button>
-          <button className="Shipping-button" onClick={() => this.props.removeProduct(item)}>-</button>
+          <button type="button" className="Shipping-button" onClick={() => this.props.addProduct(item)}>+</button>
+          <button type="button" className="Shipping-button" onClick={() => this.props.removeProduct(item)}>-</button>
 
         </div>
       </div>
@@ -95,9 +95,9 @@ class OrderSummaryComponent extends Component {
             <StripeCard />
             <br></br>
 
-            <button onClick={(ev) => this.props.setSubscription(ev, 1)} className="Checkout-submit-button-3">TREAT.ME</button>
-            <button onClick={(ev) => this.props.setSubscription(ev, 2)} className="Checkout-submit-button-3">PAMPER.ME</button>
-            <button onClick={(ev) => this.props.setSubscription(ev, 3)} className="Checkout-submit-button-3">DAZZLE.ME</button>
+            <button type="button" onClick={(ev) => this.props.setSubscription(ev, 1)} className="Checkout-submit-button-3">TREAT.ME</button>
+            <button type="button" onClick={(ev) => this.props.setSubscription(ev, 2)} className="Checkout-submit-button-3">PAMPER.ME</button>
+            <button type="button" onClick={(ev) => this.props.setSubscription(ev, 3)} className="Checkout-submit-button-3">DAZZLE.ME</button>
 
 
           </div>
