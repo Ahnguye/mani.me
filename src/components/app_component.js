@@ -8,44 +8,6 @@ import ProductItem from './product_item.js';
 import CartComponent from './cart.js';
 import OrderComplete from './order_complete.js';
 
-const products = [
-  {
-    id: '1h1ggd124232321',
-    quantity: 2,
-    price: 100
-  },
-  {
-    id: '1h1ggd124232322',
-    quantity: 1,
-    price: 100
-  },
-  {
-    id: '1h1ggd124232323',
-    quantity: 1,
-    price: 100
-  },
-  {
-    id: '1h1ggd124232324',
-    quantity: 2,
-    price: 100
-  },
-  {
-    id: '1h1ggd124232325',
-    quantity: 3,
-    price: 100
-  },
-  {
-    id: '1h1ggd124232326',
-    quantity: 4,
-    price: 100
-  },
-  {
-    id: '1h1ggd124232327',
-    quantity: 5,
-    price: 100
-  },
-]
-
 export default class AppComponent extends Component {
   constructor(props) {
     super(props);

@@ -39,7 +39,7 @@ class CartContainerComponent extends React.Component {
 */
 
   onToken = (token, products) => {
-
+    console.log(this.props.products);
     let _total = 0;
     let totalprice = 0;
 
@@ -74,15 +74,18 @@ class CartContainerComponent extends React.Component {
       country: this.state.country,
       zipCode: this.state.zipCode,
       phoneNumber: this.state.phoneNumber,
-      total: totalprice
+      total: totalprice,
+      subscription: this.state.subscription
     }
     //console.log(token);
     axios.post("https://manimebackend.herokuapp.com/",
+    //axios.post("http://localhost:5000/",
       {
         token: token,
         products: products,
         ...formData
       }).then(response => {console.log(response)}).catch(error => {console.log(error.response)});
+
   }
 
 
@@ -96,7 +99,7 @@ class CartContainerComponent extends React.Component {
     } else {
       console.log('Form submitted before Stripe.js loaded.');
     }
-    //
+
   }
 
   handleChange = (ev, key) => {
