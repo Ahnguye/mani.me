@@ -60,14 +60,18 @@ class ProductItem extends Component {
             <p>{this.state.item.price}$ for one-time purchase</p>
           </div>
           <div className="detail-form">
-            <label className="input-zipcode">SIZES</label>
-            <br></br>
-            <select className="select-detail">
-              <option label="Select"></option>
-              <option label="XS"></option>
-              <option label="S"></option>
-              <option label="M"></option>
-            </select>
+
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/01.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/02.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/03.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/04.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/05.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/06.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/07.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/08.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/09.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/10.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/11.png'/>
 
             <br></br>
             <br></br>
@@ -105,3 +109,13 @@ class ProductItem extends Component {
 }
 
 export default ProductItem;
+/*
+<label className="input-zipcode">SIZES</label>
+<br></br>
+<select className="select-detail">
+  <option label="Select"></option>
+  <option label="XS"></option>
+  <option label="S"></option>
+  <option label="M"></option>
+</select>
+*/
