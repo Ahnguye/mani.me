@@ -12,6 +12,7 @@ app.use((req, res, next) => {
     next()
 })
 
+
 app.get('*', (req,res) => {
   //console.log(__dirname);
   res.sendFile(path.resolve(__dirname, 'index.html'));

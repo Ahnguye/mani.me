@@ -11,7 +11,8 @@ import OrderComplete from './order_complete.js';
 export default class AppComponent extends Component {
   constructor(props) {
     super(props);
-    const _products = localStorage.getItem('products');
+    var _products = localStorage.getItem('products');
+
     //console.log(_products);
     if (_products) {
       this.state = {
@@ -19,7 +20,7 @@ export default class AppComponent extends Component {
       };
     } else {
       this.state = {
-        products: products
+        products: {}
       };
     }
   }
