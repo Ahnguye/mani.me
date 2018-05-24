@@ -58,6 +58,26 @@ export default class SplashPage extends Component {
           </div>
         </div>
 
+        <div class="custom-container-2">
+          <div class="custom-mission">
+          <h2>Our Mission</h2>We want to empower women, everywhere. By creating personalized, hassle-free manicures, Mani.Me supports #ladybosses and #supermoms to spend their time on the things that matter (not rushing to salons to stay polished). Nail artists receive compensation for each purchase of their design, so with every manicure, we are raising each other up.</div>
+        </div>
+
+
+        <div className="row-eq-height">
+          <div className="col-6 col-sm-3 grid-splash-page-item">
+          </div>
+          <div className="col-6 col-sm-3 grid-splash-page-item">
+
+          </div>
+          <div className="col-6 col-sm-3 grid-splash-page-item">
+
+          </div>
+          <div className="col-6 col-sm-3 grid-splash-page-item">
+
+          </div>
+        </div>
+
 
       </div>
     );
