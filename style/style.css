@@ -171,6 +171,54 @@ a:hover {
 //////////////////////
 
 
+.shopping-item-list-container {
+
+}
+
+ul {
+  list-style-type: none;
+  color: #313131;
+  padding-left: 20px;
+}
+.side-menu-items {
+
+}
+
+.shopping-item-icon-img {
+  width: 20%;
+  height: auto;
+}
+
+.shopping-item-icon-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.shopping-item-side-menu {
+  box-sizing: border-box;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.shopping-item-main-menu {
+  box-sizing: border-box;
+}
+
+.shopping-item-wrapper {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+}
 
 .shopping-item-container {
    max-width: 1400px;
@@ -184,7 +232,7 @@ a:hover {
 .shopping-item-picture {
   display: block;
   height: 75%;
-  border-bottom: 1px #e1e1e1 solid;
+  border-bottom: 0px #e1e1e1 solid;
   padding-bottom: 40px;
 }
 
@@ -550,6 +598,17 @@ select.Input-box {
 .Checkout-submit-button-3::selection {
   background-color: pink;
 }
+
+.shopping-item-icon-img:hover {
+  opacity: 0.5;
+}
+.shopping-item-icon-img:focus {
+  opacity: 0.5;
+}
+.shopping-item-icon-img::selection {
+  opacity: 0.5;
+}
+
 
 
 .Shipping-button-unselected {

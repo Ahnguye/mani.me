@@ -20,14 +20,36 @@ export const urls =
     { url: "https://d1raprm0ezfai1.cloudfront.net/Website+images+used/shop/Color+dots.png", name: "15", category: 2, price: 30.00 },
   ];
 
+
 class ShoppingItems extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  checkCategory = (item) => {
+    if (this.props.category == 0 || this.props.category == item.category)
+      return true;
+    return false;
+  }
 
   render() {
-    const shoppingItemsArray = urls.map((item) => {
-      const link = '/shop/item/' + item.name;
-      return (
-        <Link to={link} className="shopping-item col-12 col-sm-6 col-md-3 col-lg-2">
+
+    //get only the urls that fit the category and put in const.
+    const _urls = urls.filter(this.checkCategory);
+
+    const num_category = this.props.category;
+
+    const shoppingItemsArray = _urls.map((item) => {
+    const link = '/shop/item/' + item.name;
+
+    return (
+        <Link to={link} className="shopping-item col-12 col-sm-6 col-md-5 col-lg-3">
           <img className="shopping-item-picture" src={item.url}/>
+          <div className="shopping-item-icon-container">
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/manime_trans.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/heart_trans.png'/>
+            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/X_trans.png'/>
+          </div>
           <div className="shopping-item-info">
             <div className="shopping-item-title">Title</div>
             <div className="shopping-item-title">Nail {item.name}</div>
@@ -36,9 +58,6 @@ class ShoppingItems extends Component {
         </Link>
       );
     });
-
-
-
 
     return (
       <div>
