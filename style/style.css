@@ -1129,6 +1129,11 @@ select.Input-box {
   padding-right: 0px !important;
 }
 
+.no-margin-vertical {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 .no-overflow {
   overflow: hidden;
 }

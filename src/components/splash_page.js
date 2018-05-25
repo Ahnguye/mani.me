@@ -225,11 +225,6 @@ export default class SplashPage extends Component {
           <button className="contact-input-form-button">Send</button>
           </div>
         </div>
-
-        <div className="footer">
-
-        </div>
-
       </div>
     );
   }

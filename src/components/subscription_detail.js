@@ -14,7 +14,7 @@ class SubscriptionDetailComponent extends Component {
         </div>
         <div className="icons-title avenir"><h1 className="">How It Works</h1></div>
         <div className="subscription-gold-line"></div>
-        <div className="icons">
+        <div className="icons no-margin-vertical">
           <div className="row justify-content-center">
             <div className="col-12 col-md-2 icon-container">
               <img className="icon" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/view.png" />
