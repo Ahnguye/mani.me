@@ -90,6 +90,19 @@ export default class SplashPage extends Component {
           </ul>
         </div>
 
+
+        <div className="splash-image-carousel">
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Color+dots.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.48.14+AM.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.57.38+AM.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.57.47+AM.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.58.12+AM.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.58.16+AM.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.58.21+AM.png" />
+            <img className="splash-image-carousel-img" src="https://d1raprm0ezfai1.cloudfront.net/App+images/Nail+Designs+To+Upload/Screen+Shot+2018-04-22+at+10.58.33+AM.png" />
+
+        </div>
+
         <div class="custom-container-2">
           <div class="custom-mission">
           <h2>Our Mission</h2>We want to empower women, everywhere. By creating personalized, hassle-free manicures, Mani.Me supports #ladybosses and #supermoms to spend their time on the things that matter (not rushing to salons to stay polished). Nail artists receive compensation for each purchase of their design, so with every manicure, we are raising each other up.</div>
@@ -99,17 +112,54 @@ export default class SplashPage extends Component {
 
 
 
-        <div className="row-eq-height">
-          <div className="col-6 col-sm-3 grid-splash-page-item">
+        <div className="splash-grid-button-wrapper">
+          <div className="grid-splash-page-item bg-pink">
+            <div className="grid-splash-page-item-content">
+              <div className="grid-splash-page-item-content-line"></div>
+              GALLERY
+              <br/>VISIT NOW >
+            </div>
           </div>
-          <div className="col-6 col-sm-3 grid-splash-page-item">
-
+          <div className="grid-splash-page-item">
+            <div className="grid-splash-page-item-content">
+              <img className="grid-splash-page-item-content-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/gridimages/592407316.png" />
+            </div>
           </div>
-          <div className="col-6 col-sm-3 grid-splash-page-item">
-
+          <div className="grid-splash-page-item bg-white">
+            <div className="grid-splash-page-item-content">
+              <div className="grid-splash-page-item-content-line"></div>
+              MEDIA & PRESS
+              <br/>READ MORE >
+            </div>
           </div>
-          <div className="col-6 col-sm-3 grid-splash-page-item">
-
+          <div className="grid-splash-page-item">
+            <div className="grid-splash-page-item-content">
+              <img className="grid-splash-page-item-content-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/gridimages/Black.png" />
+            </div>
+          </div>
+          <div className="grid-splash-page-item">
+            <div className="grid-splash-page-item-content">
+              <img className="grid-splash-page-item-content-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/gridimages/Macaroon.png" />
+            </div>
+          </div>
+          <div className="grid-splash-page-item bg-black">
+            <div className="grid-splash-page-item-content font-white">
+              <div className="grid-splash-page-item-content-line-white"></div>
+              SHOP
+              <br/>BUY NOW >
+            </div>
+          </div>
+          <div className="grid-splash-page-item">
+            <div className="grid-splash-page-item-content">
+              <img className="grid-splash-page-item-content-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/gridimages/shutterstock_580659442.jpg" />
+            </div>
+          </div>
+          <div className="grid-splash-page-item bg-pink">
+            <div className="grid-splash-page-item-content">
+              <div className="grid-splash-page-item-content-line"></div>
+              TECHNOLOGY
+              <br/>LEARN MORE >
+            </div>
           </div>
         </div>
 
