@@ -52,7 +52,7 @@ export default class SplashPage extends Component {
 
           </div>
         </div>
-        <div className="icons-title avenir"><h1 className="off-grey">Three ways to be <span className="italic">perfectly polished</span></h1></div>
+        <div className="icons-title-2 avenir"><h1 className="off-grey">Three ways to be <span className="italic">perfectly polished</span></h1></div>
 
         <div className="plans-items-wrapper">
           <ul className="plans-items-ul">
@@ -217,12 +217,12 @@ export default class SplashPage extends Component {
           <div>
             Still have questions? Let us know how we can help.
           </div>
-          <input className=""></input>
-          <input></input>
-          <input></input>
-          <input></input>
+          <input className="contact-input-form" placeholder="Name *"></input>
+          <input className="contact-input-form" placeholder="Email *"></input>
+          <input className="contact-input-form" placeholder="Phone"></input>
+          <input className="contact-input-form" placeholder="Message"></input>
           <br/>
-          <button></button>
+          <button className="contact-input-form-button">Send</button>
           </div>
         </div>
 

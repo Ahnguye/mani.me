@@ -147,6 +147,12 @@ a:hover {
 
 .icons-title {
   text-align: center;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.icons-title-2 {
+  text-align: center;
   padding-top: 30px;
   width: 100%;
 }
@@ -946,6 +952,7 @@ select.Input-box {
   padding: 20px 20px 29px;
   position: relative;
   background-color: white;
+  height: 70%;
 }
 .plans-item-content-header {
   border-bottom: 1px solid #DDDDDD;
@@ -970,6 +977,10 @@ select.Input-box {
   padding: 5px;
   border: 1px solid transparent;
   white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
 }
 
 .splash-image-carousel {
@@ -1021,4 +1032,34 @@ select.Input-box {
 
 .italic {
   font-style: italic;
+}
+
+.contact-input-form {
+  background-color: black;
+  border: none;
+  border-bottom: 1px white solid;
+  margin: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.contact-input-form-button {
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+    font-size: 12px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
 }
