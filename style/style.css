@@ -764,7 +764,12 @@ select.Input-box {
 .bg-white { background-color: white; }
 .bg-black { background-color: black; }
 .bg-pink { background-color: #FCD2C0; }
+.bg-grey { background-color: #a1a1a1; }
+.bg-yellow { background-color: #FFDE5F; }
+.bg-purple { background-color: #D1C8E1; }
+.bg-tan { background-color: #E6DCC8; }
 .bg-beige { background-color: rgb(244, 237, 229); }
+.bg-teal { background-color: #EAF4F6; }
 
 
 .grid-splash-page-item-content {
@@ -1051,15 +1056,87 @@ select.Input-box {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1; /* Firefox */
-    font-size: 12px;
+  color: white;
+  opacity: 1; /* Firefox */
+  font-size: 12px;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: white;
+  color: white;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: white;
+  color: white;
+}
+
+.about-profile-img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.about-technology-img {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.about-profile-img-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-tech-container {
+  height: 400px !important;
+}
+
+.about-tech-item-container {
+  height: 400px !important;
+}
+
+.about-profile-img-text-container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 100px;
+}
+
+.about-tech-img-text-container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 50px !important;
+}
+
+.tech-item-title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 20%;
+}
+
+.tech-item-description {
+  font-size: 18px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.no-margin {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.about-profile-title { font-size: 80px; line-height: 70px; }
+.about-profile-description {
+  color: #00305B;
+  padding: 50px;
+}
+.bold { font-style: oblique; }
+.big-backslash { font-size: 70px; line-height: 70px; }
+
+.about-profile-height {
+  height: 600px;
 }
