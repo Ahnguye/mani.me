@@ -5,7 +5,7 @@ export default class SplashPage extends Component {
     return (
       <div className="row">
         <img className="banner" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/_shutterstock_6583532773.jpg" />
-        <div className="icons-title">Welcome</div>
+        <div className="belinda-heading font-white">Welcome</div>
         <div className="icons-title">Designer nails made for you, delivered to your door</div>
         <div className="icons">
           <div className="row justify-content-center">
@@ -163,6 +163,49 @@ export default class SplashPage extends Component {
           </div>
         </div>
 
+
+        <div className="row justify-content-center">
+          <div className="col-12">
+            <div className="testimonials-heading">
+              What others are saying
+            </div>
+          </div>
+          <div className="col-12 col-md-3">
+            “
+            <br/>I can't believe you can print my nails exactly. It's not just your drug store press on nail, it actually looks like your own nails! Just amazing.
+            <br/>Maria, Full-time Mom
+          </div>
+          <div className="col-12 col-md-3">
+            “
+            <br/>It also feels great to know I'm supporting other female artists while getting my polish done in literally minutes without leaving my house!
+            <br/>Katy, Art Teacher
+          </div>
+          <div className="col-12 col-md-3">
+            “
+            <br/>I travel for work and never know where to get my nails done. Mani.Me gives me peace of mind & makes me feel like I can take on anything!
+            <br/>Joy, Consultant
+          </div>
+        </div>
+
+
+        <div class="custom-container-3">
+          <div class="custom-mission">
+          <h2>Get in Touch</h2>
+          <div>
+            Still have questions? Let us know how we can help.
+          </div>
+          <input className=""></input>
+          <input></input>
+          <input></input>
+          <input></input>
+          <br/>
+          <button></button>
+          </div>
+        </div>
+
+        <div className="footer">
+
+        </div>
 
       </div>
     );
