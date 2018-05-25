@@ -2,8 +2,13 @@ body {
   font-family: 'Muli', sans-serif !important;
 }
 
+.avenir {
+  font-family:"Avenir LT W01_45 Book1475508" !important;
+}
+
 .subheading {
   font-family: 'Muli', sans-serif !important;
+  font-size: 14px;
 }
 
 .container-fluid {
@@ -86,12 +91,21 @@ a:hover {
     color: pink;
 }
 
-
+.banner-wrapper {
+  width: 100%;
+  padding-top: 37.3%;
+  position: relative;
+}
 
 .banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   max-width: 100%;
   width: 100% !important;
-  height: 60% !important;
+  height: 100%;
 
 }
 
@@ -99,8 +113,16 @@ a:hover {
   max-height: 140px;
   align-self: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
   border-width: medium;
+}
+
+.icon-line {
+  width: 30%;
+  border-bottom: 3px solid black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon-text {
@@ -125,16 +147,41 @@ a:hover {
 
 .icons-title {
   text-align: center;
-  padding-top: 75px;
+  padding-top: 30px;
   width: 100%;
 }
 
-.belinda-heading {
+.belinda {
+  font-family: "Belinda W05 Regular" !important;
+}
+
+.belinda-heading-wrapper {
   font-family: "Belinda W05 Regular";
-  text-align: center;
-  padding-top: 75px;
-  width: 100%;
-  font-size: 72px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  font-size: 120px;
+}
+
+.belinda-heading {
+  height: 100%;
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-subheading {
+  margin-top: -20px;
+  color: #313131;
+  font-size: 24px;
+}
+
+.belinda-heading-text {
+  text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+  margin-top: -100px;
 }
 
 .icon-container {
@@ -663,8 +710,10 @@ select.Input-box {
 
 .custom-mission {
   align-self: center;
-  padding: 30px;
-  width: 400px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 600px;
   background-color: #000;
   color: #fff;
 }
@@ -697,6 +746,13 @@ select.Input-box {
   margin-left: auto;
   margin-right: auto;
 }
+
+.grid-splash-page-item-content-button {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+
 
 .font-white { color: white !important; }
 .bg-white { background-color: white; }
@@ -885,7 +941,7 @@ select.Input-box {
   border: none;
 }
 .plans-item-content {
-  border-top: 5px solid #333333;
+  border-top: 8px solid #333333;
   margin: -20px 30px 0;
   padding: 20px 20px 29px;
   position: relative;
@@ -895,7 +951,7 @@ select.Input-box {
   border-bottom: 1px solid #DDDDDD;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 20px;
 }
 .plans-item-content-body {
@@ -926,7 +982,7 @@ select.Input-box {
   overflow: hidden;
 }
 .splash-image-carousel-img {
-  max-height: 200px;
+  max-height: 250px;
   margin: 10px;
   margin-left: 0px;
 }
@@ -949,4 +1005,20 @@ select.Input-box {
   background-color: black;
   width: 100%;
   height: 100px;
+}
+
+.big-quotes {
+  font-size: 72px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.off-grey {
+  color: #616161;
+}
+
+.italic {
+  font-style: italic;
 }
