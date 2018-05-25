@@ -6,6 +6,10 @@ body {
   font-family:"Avenir LT W01_45 Book1475508" !important;
 }
 
+.avenir-book {
+  font-family:"Avenir LT W01_45 Book1475508" !important;
+}
+
 .subheading {
   font-family: 'Muli', sans-serif !important;
   font-size: 14px;
@@ -1139,4 +1143,61 @@ select.Input-box {
 
 .about-profile-height {
   height: 600px;
+}
+
+.subscription-banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.subscription-banner-picture {
+  min-width: 100%;
+  min-height: 100%;
+  flex-shrink: 0;
+
+}
+.subscription-banner-title {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -60px;
+  font-size: 140px;
+}
+.subscription-gold-line {
+  width: 120px;
+  border-bottom: 3px solid #FFDE5F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription-button {
+  margin-top: 80px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-panel {
+  margin-top: 60px;
+  height: 250px;
+}
+
+.video-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.video-caption-text {
+  margin-left: 35px;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+.video-caption-subheading {
+  font-size: 18px;
 }
