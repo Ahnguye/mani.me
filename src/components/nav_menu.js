@@ -19,16 +19,16 @@ export default class NavMenu extends Component {
               <button className="dropbtn">ABOUT US</button>
               <div className="dropdown-content">
                 <a href="/about">OUR TEAM</a>
-                <a href="/#">OUR TECHNOLOGY</a>
-                <a href="/#">IN THE PRESS</a>
+                <a href="/tech">OUR TECHNOLOGY</a>
+                <a href="/press">IN THE PRESS</a>
               </div>
             </div>
             <div className="dropdown">
               <button className="dropbtn">HOW IT WORKS</button>
               <div className="dropdown-content">
-                <a href="/#">TREAT.ME</a>
-                <a href="/#">PAMPER.ME</a>
-                <a href="/#">DAZZLE.ME</a>
+                <a href="/subscription">TREAT.ME</a>
+                <a href="/subscription">PAMPER.ME</a>
+                <a href="/subscription">DAZZLE.ME</a>
               </div>
             </div>
             <div className="dropdown">

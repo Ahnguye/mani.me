@@ -7,6 +7,10 @@ import ShoppingComponent from './shopping.js';
 import ProductItem from './product_item.js';
 import CartComponent from './cart.js';
 import OrderComplete from './order_complete.js';
+import AboutComponent from './about_component.js';
+import OurTechnologyComponent from './our_technology_component.js';
+import PressComponent from './in_the_press_component.js';
+import SubscriptionDetailComponent from './subscription_detail.js';
 
 export default class AppComponent extends Component {
   constructor(props) {
@@ -83,12 +87,15 @@ export default class AppComponent extends Component {
       <div>
         <NavMenu />
         <Route exact path="/" component={SplashPage} />
-        <Route path="/about" component={SplashPage} />
+        <Route path="/about" component={AboutComponent} />
+        <Route path="/tech" component={OurTechnologyComponent} />
+        <Route path="/press" component={PressComponent} />
+        <Route path="/subscription" component={SubscriptionDetailComponent} />
+
         <Route exact path="/shop" component={ShoppingComponent} />
         <Route path="/shop/item/:id" render={this.productItemContainer} />
         <Route path="/cart" render={() => <CartComponent products={this.state.products} addProduct={this.addProduct} removeProduct={this.removeProduct}/>} />
         <Route path="/complete" component={OrderComplete} />
-        <Route path="/goodbye" component={SplashPage} />
       </div>
     );
   }
