@@ -24,9 +24,10 @@ export default class AppComponent extends Component {
       };
     } else {
       this.state = {
-        products: {}
+        products: []
       };
     }
+    //console.log(this.state.products);
   }
 
 
