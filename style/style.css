@@ -873,8 +873,10 @@ select.Input-box {
   background-color: #fefde5 !important;
 }
 
-////////////////////////////////////////////
 
+/*
+  Cart Page
+*/
 
 .cart-item-container {
   width: 100%;
@@ -939,6 +941,11 @@ select.Input-box {
     justify-content: center !important;
   }
 }
+
+
+/*
+  Splash Page
+*/
 
 .plans-items-wrapper {
   width: 100%;
@@ -1081,6 +1088,11 @@ select.Input-box {
   color: white;
 }
 
+
+/*
+  About Page
+*/
+
 .about-profile-img {
   flex-shrink: 0;
   min-width: 100%;
@@ -1157,6 +1169,10 @@ select.Input-box {
 .about-profile-height {
   height: 600px;
 }
+
+/*
+  Subscription
+*/
 
 .subscription-banner-wrapper {
   position: relative;
