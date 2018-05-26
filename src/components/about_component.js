@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FooterComponent from './footer_component.js';
 //import '../../style/about.css';
 
 class AboutComponent extends Component {
@@ -32,6 +33,7 @@ class AboutComponent extends Component {
             <img className="about-profile-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/26239593_1256384884462568_199943898728075355_n.jpg" />
           </div>
         </div>
+        <FooterComponent />
       </div>
     );
   }

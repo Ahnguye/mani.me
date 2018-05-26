@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FooterComponent from './footer_component.js';
 
 class OurTechnologyComponent extends Component {
   constructor(props){
@@ -43,6 +44,7 @@ class OurTechnologyComponent extends Component {
 
           </div>
         </div>
+        <FooterComponent />
       </div>
 
     );

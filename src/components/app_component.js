@@ -97,7 +97,6 @@ export default class AppComponent extends Component {
         <Route path="/shop/item/:id" render={this.productItemContainer} />
         <Route path="/cart" render={() => <CartComponent products={this.state.products} addProduct={this.addProduct} removeProduct={this.removeProduct}/>} />
         <Route path="/complete" component={OrderComplete} />
-        <div className="footer"></div>
       </div>
     );
   }

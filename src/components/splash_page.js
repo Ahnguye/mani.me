@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FooterComponent from './footer_component.js';
 
 export default class SplashPage extends Component {
   render() {
@@ -225,6 +226,7 @@ export default class SplashPage extends Component {
           <button className="contact-input-form-button">Send</button>
           </div>
         </div>
+        <FooterComponent />
       </div>
     );
   }
