@@ -176,6 +176,14 @@ a:hover {
 }
 
 .belinda-heading {
+  left: 50%;
+  top: 50%;
+  transform: translate(-70%, -30%);
+  text-align: center;
+  position: relative;
+}
+
+.belinda-heading-2 {
   height: 100%;
   padding-left: 20%;
   display: flex;
