@@ -46,11 +46,16 @@ body {
   height: 30px;
 }
 
-.nav-menu-menu-items {
+.nav-menu-items-wrapper {
   position: absolute;
   right: 0;
-  transform: translate(0%, -50%);
-  top: 50%;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-menu-menu-items {
+
 }
 
 .navbar{
@@ -203,7 +208,7 @@ a:hover {
 
 .belinda-heading {
   top: 50%;
-  transform: translate(0%, 0%);
+  transform: translate(0%, -20%);
   text-align: left;
   margin-left: 15%;
   position: relative;
