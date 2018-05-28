@@ -97,8 +97,11 @@ a:hover {
 
 .banner-wrapper {
   width: 100%;
-  padding-top: 37.3%;
+  padding-top: 50%;
   position: relative;
+  background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/_shutterstock_6583532773.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .banner {
@@ -176,10 +179,10 @@ a:hover {
 }
 
 .belinda-heading {
-  left: 50%;
   top: 50%;
-  transform: translate(-70%, -30%);
-  text-align: center;
+  transform: translate(0%, 0%);
+  text-align: left;
+  margin-left: 15%;
   position: relative;
 }
 
@@ -202,11 +205,17 @@ a:hover {
   margin-top: -100px;
 }
 
+.icon-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .icon-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-
+  width: 18% !important;
 }
 
 .icon-container-2 {
@@ -488,9 +497,9 @@ select {
 }
 
 
-////////////////////////////
-
-
+/*
+  Checkout
+*/
 
 .Checkout-container {
   width: 60%;
@@ -800,8 +809,11 @@ select.Input-box {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   flex-direction: row;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -50px !important;
 }
 
@@ -875,7 +887,7 @@ select.Input-box {
 
 
 /*
-  Cart Page
+  Cart
 */
 
 .cart-item-container {
@@ -959,12 +971,14 @@ select.Input-box {
   margin-right: auto;
   padding-bottom: 40px;
   list-style: none;
+  flex-wrap: wrap;
 }
 .plans-items-li {
   flex-basis: 33%;
   margin-top: -172px !important;
   list-style: none;
-  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
 }
 .plans-item-img {
   width: calc(100%);
@@ -1028,6 +1042,13 @@ select.Input-box {
 
 .text-align-center {
   text-align: center;
+}
+
+.testimonials-wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .testimonials-heading {

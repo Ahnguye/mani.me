@@ -7,7 +7,7 @@ export default class SplashPage extends Component {
       <div className="row">
 
         <div className="banner-wrapper">
-          <img className="banner" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/_shutterstock_6583532773.jpg" />
+          
           <div className="belinda-heading-wrapper">
             <div className="belinda-heading font-white">
               <div className="belinda-heading-text">Welcome</div>
@@ -20,15 +20,15 @@ export default class SplashPage extends Component {
 
         <div className="icons-title avenir"><h1 className="off-grey">Designer nails made for you, delivered to your door</h1></div>
         <div className="icons">
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-2 icon-container">
+          <div className="row justify-content-center icon-wrapper">
+            <div className="col-12 col-md-3 icon-container">
               <img className="icon" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/manicure.png" />
               <div className="icon-line"></div>
               <div className="icon-text">
                 Tailor-fitted, ready-to-wear nails made with cutting edge 3D printing and scanning technologies.
               </div>
             </div>
-            <div className="col-12 col-md-2 icon-container">
+            <div className="col-12 col-md-3 icon-container">
               <img className="icon" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/safety.png" />
               <div className="icon-line"></div>
               <div className="icon-text">
@@ -36,7 +36,7 @@ export default class SplashPage extends Component {
               </div>
 
             </div>
-            <div className="col-12 col-md-2 icon-container">
+            <div className="col-12 col-md-3 icon-container">
               <img className="icon" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/view.png" />
               <div className="icon-line"></div>
               <div className="icon-text">
@@ -44,7 +44,7 @@ export default class SplashPage extends Component {
               </div>
 
             </div>
-            <div className="col-12 col-md-2 icon-container">
+            <div className="col-12 col-md-3 icon-container">
               <img className="icon" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Photo+Fillers/nail.png" />
               <div className="icon-line"></div>
               <div className="icon-text">
@@ -187,23 +187,23 @@ export default class SplashPage extends Component {
         </div>
 
 
-        <div className="row justify-content-center">
+        <div className="row justify-content-center testimonials-wrapper">
           <div className="col-12">
             <div className="testimonials-heading belinda">
               <h1>What others are saying</h1>
             </div>
           </div>
-          <div className="col-12 col-md-2 text-align-center avenir">
+          <div className="col-12 col-md-4 text-align-center avenir">
             <span className="big-quotes avenir">“</span>
             <br/>I can't believe you can print my nails exactly. It's not just your drug store press on nail, it actually looks like your own nails! Just amazing.
             <br/><br/><span className="bold">Maria</span>, Full-time Mom
           </div>
-          <div className="col-12 col-md-2 text-align-center avenir">
+          <div className="col-12 col-md-4 text-align-center avenir">
             <span className="big-quotes avenir">“</span>
             <br/>It also feels great to know I'm supporting other female artists while getting my polish done in literally minutes without leaving my house!
             <br/><br/><span className="bold">Katy</span>, Art Teacher
           </div>
-          <div className="col-12 col-md-2 text-align-center">
+          <div className="col-12 col-md-4 text-align-center">
             <span className="big-quotes avenir">“</span>
             <br/>I travel for work and never know where to get my nails done. Mani.Me gives me peace of mind & makes me feel like I can take on anything!
             <br/><br/><span className="bold">Joy</span>, Consultant
@@ -211,8 +211,8 @@ export default class SplashPage extends Component {
         </div>
 
 
-        <div class="custom-container-3">
-          <div class="custom-mission">
+        <div className="custom-container-3">
+          <div className="custom-mission">
           <div className="grid-splash-page-item-content-line-white"></div>
           <h2 className="belinda">Get in Touch</h2>
           <div>
