@@ -19,6 +19,12 @@ body {
   padding: 0 !important;
 }
 
+/*
+
+  Navigation Component
+
+*/
+
 .nav-bar-default {
   white-space: nowrap;
 }
@@ -32,11 +38,28 @@ body {
   width: 50%;
 }
 
+.nav-menu-mobile-menu-items {
+  display: none;
+}
+
+.menu-icon {
+  height: 30px;
+}
+
+.nav-menu-menu-items {
+  position: absolute;
+  right: 0;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
 .navbar{
   justify-content: center !important;
 }
 .navbar-middle {
-  text-align: center;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
 }
 
 .nav-item-container {

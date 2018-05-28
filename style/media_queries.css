@@ -37,14 +37,17 @@
   }
   .grid-splash-page-item {
     height: auto;
-    flex-basis: 40%;
-    padding-top: 40%;
+    flex-basis: 50%;
+    padding-top: 50%;
   }
   .splash-grid-button-wrapper { justify-content: center; }
   .splash-image-carousel-img {
     max-height: 150px;
     margin: 4px;
     margin-left: 0px;
+  }
+  .dropbtn {
+    padding: 10px;
   }
 }
 @media only all and (max-width: 768px) {
@@ -58,10 +61,13 @@
   }
   .grid-splash-page-item {
     height: auto;
-    flex-basis: 60%;
-    padding-top: 60%;
+    flex-basis: 50%;
+    padding-top: 50%;
   }
-  .splash-grid-button-wrapper { justify-content: center; }
+  .splash-grid-button-wrapper {
+    justify-content: center;
+    width: 70%;
+  }
   .testimonials-wrapper {
     padding: 10%;
   }
@@ -70,7 +76,82 @@
   .icons { margin-top: 0px; }
   .icon-container { padding-bottom: 40px; }
   h1 { font-size: 1.5rem !important; }
+
+  .banner-wrapper {
+    padding-top: 80%;
+    background-position: 70% 0%;
+  }
+  .nav-menu-menu-items {
+    display: none;
+  }
+  .nav-menu-mobile-menu-items {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .logo { margin-right: 0px; }
+  .navbar-middle {
+    text-align: center;
+  }
 }
 @media only all and (max-width: 480px) {
-
+  .banner-subheading {
+    font-size: 16px;
+  }
+  .belinda-heading-text {
+    transform: translate(0%, 25%) !important;
+    font-size: 50px !important;
+    margin-bottom: 30px;
+  }
+  h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .plans-items-ul {
+    margin-bottom: -130px;
+    padding-top: 130px !important;
+  }
+  .plans-items-li {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    padding-bottom: 60%;
+  }
+  .plans-items-wrapper {
+    margin-top: 40px;
+  }
+  .splash-image-carousel-img {
+    max-height: 100px;
+  }
+  .custom-container-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .custom-mission {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5%;
+  }
+  .contact-input-form-subheading {
+    font-size: 12px;
+  }
+  .icons {
+    margin-bottom: 0px;
+  }
+  .grid-splash-page-item-content-line {
+    margin-top: 20px;
+  }
+  .grid-splash-page-item-content-title {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .contact-input-form { width: 80%; }
+  .splash-grid-button-wrapper {
+    width: 90%;
+  }
+  .grid-splash-page-item-content-button { font-size: 14px; }
+  .testimonials-wrapper {
+    padding: 5%;
+  }
 }

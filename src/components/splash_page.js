@@ -134,7 +134,7 @@ export default class SplashPage extends Component {
           <div className="grid-splash-page-item bg-pink">
             <div className="grid-splash-page-item-content">
               <div className="grid-splash-page-item-content-line"></div>
-              <h4 className="avenir">GALLERY</h4>
+              <h4 className="grid-splash-page-item-content-title avenir">GALLERY</h4>
               <br/>
               <div className="grid-splash-page-item-content-button">VISIT NOW ></div>
 
@@ -148,7 +148,7 @@ export default class SplashPage extends Component {
           <div className="grid-splash-page-item bg-white">
             <div className="grid-splash-page-item-content">
               <div className="grid-splash-page-item-content-line"></div>
-              <h4 className="avenir">MEDIA & PRESS</h4>
+              <h4 className="grid-splash-page-item-content-title avenir">MEDIA & PRESS</h4>
               <br/>
               <div className="grid-splash-page-item-content-button">READ MORE ></div>
             </div>
@@ -166,7 +166,7 @@ export default class SplashPage extends Component {
           <div className="grid-splash-page-item bg-black">
             <div className="grid-splash-page-item-content font-white">
               <div className="grid-splash-page-item-content-line-white"></div>
-              <h4 className="avenir">SHOP</h4>
+              <h4 className="grid-splash-page-item-content-title avenir">SHOP</h4>
               <br/>
               <div className="grid-splash-page-item-content-button">BUY NOW ></div>
             </div>
@@ -179,7 +179,7 @@ export default class SplashPage extends Component {
           <div className="grid-splash-page-item bg-pink">
             <div className="grid-splash-page-item-content">
               <div className="grid-splash-page-item-content-line"></div>
-              <h4 className="avenir">TECHNOLOGY</h4>
+              <h4 className="grid-splash-page-item-content-title avenir">TECHNOLOGY</h4>
               <br/>
               <div className="grid-splash-page-item-content-button">LEARN MORE ></div>
             </div>
@@ -215,7 +215,7 @@ export default class SplashPage extends Component {
           <div className="custom-mission">
           <div className="grid-splash-page-item-content-line-white"></div>
           <h2 className="belinda">Get in Touch</h2>
-          <div>
+          <div className="contact-input-form-subheading">
             Still have questions? Let us know how we can help.
           </div>
           <input className="contact-input-form" placeholder="Name *"></input>
