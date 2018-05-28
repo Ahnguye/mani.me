@@ -1,8 +1,21 @@
-
-@media only all and (min-width: 1201px) {
-
+@media only all and (min-width: 1501px) {
+  /* Splash Page */
+  /* About Page */
+  .about-profile-description {
+    margin-top: 30px;
+  }
 }
-@media only all and (max-width: 1201px) {
+@media only all and (max-width: 1500px) {
+  /* Splash Page */
+  /* About Page */
+  .about-profile-title {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .big-backslash { font-size: 40px; line-height: 40px; }
+}
+@media only all and (max-width: 1200px) {
+  /* Splash Page */
   h1 { font-size: 2.5rem !important; }
   .belinda-heading-text { font-size: 100px; }
   .belinda-heading {
@@ -18,8 +31,18 @@
     flex-basis: 33%;
     padding: 10px;
   }
+  /* About Page */
+  .about-profile-title {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .about-profile-description {
+    font-size: 14px;
+  }
+  .big-backslash { font-size: 30px; line-height: 30px; }
 }
 @media only all and (max-width: 1024px) {
+  /* Splash Page */
   .belinda-heading-text { font-size: 80px; }
   .belinda-heading {
     transform: translate(0%, -10%);
@@ -49,8 +72,22 @@
   .dropbtn {
     padding: 10px;
   }
+  /* About Page */
+  .about-profile-title {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .about-profile-description {
+    font-size: 11px;
+  }
+  .big-backslash { font-size: 20px; line-height: 10px; }
+
 }
+
+
+
 @media only all and (max-width: 768px) {
+  /* Splash Page */
   .belinda-heading-text {
     font-size: 60px;
     margin-bottom: 10px;
@@ -95,8 +132,23 @@
   .navbar-middle {
     text-align: center;
   }
+  /* About Page */
+  .about-us-profile-section-container {
+    padding-top: 45%;
+  }
+  .about-profile-img-2 {
+    background-position: 0% 00%;
+  }
 }
+
+@media only all and (max-width: 620px) {
+  /* Splash Page */
+  /* About Page */
+  .about-profile-description { font-size: 10px; }
+}
+
 @media only all and (max-width: 480px) {
+  /* Splash Page */
   .banner-subheading {
     font-size: 16px;
   }
@@ -153,5 +205,17 @@
   .grid-splash-page-item-content-button { font-size: 14px; }
   .testimonials-wrapper {
     padding: 5%;
+  }
+  /* About Page */
+  .about-us-profile-section-container {
+    width: 100% !important;
+    flex: 100% !important;
+    max-width: 100% !important;
+  }
+  .about-profile-img-1 {
+    background-position: 0% 70%;
+  }
+  .about-profile-img-2 {
+    background-position: 0% 20%;
   }
 }

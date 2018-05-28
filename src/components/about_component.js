@@ -9,28 +9,29 @@ class AboutComponent extends Component {
 
   render() {
     return (
-      <div className="row about-profile-height">
-        <div className="col-12 col-md-3 no-margin no-overflow">
-          <div className="about-profile-img-container">
-            <img className="about-profile-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/26239593_1256384884462568_199943898728075355_n.jpg" />
+      <div>
+        <div className="row about-us-profile-container">
+          <div className="col-6 col-md-3 about-us-profile-section-container ">
+            <div className="about-us-profile-section-img-container about-profile-img-1">
+            </div>
           </div>
+          <div className="col-6 col-md-3 about-us-profile-section-container">
+            <div className="about-us-profile-section-text">
+              <span className="about-profile-title"><span className="bold">OUR</span><br />TEAM<br/></span>
+              <span className="big-backslash belinda">/</span>
+              <div className="about-profile-description">Our team is excited to solve this problem for ourselves and the awesome women in our lives. We hail from Taiwan, Korea, and Spain. Our strength lies in our team's experiences as strategy consultants, nail technicians, 3D printing manufacturing analysts, and entrepreneurs.</div>
+            </div>
 
-        </div>
-        <div className="col-12 col-md-3 about-profile-img-text-container text-align-center bg-teal">
-          <span className="about-profile-title"><span className="bold">OUR</span></span>
-          <br/>
-          <span className="about-profile-title">TEAM</span>
-          <br/><span className="big-backslash belinda">/</span>
-          <br/><div className="about-profile-description">Our team is excited to solve this problem for ourselves and the awesome women in our lives. We hail from Taiwan, Korea, and Spain. Our strength lies in our team's experiences as strategy consultants, nail technicians, 3D printing manufacturing analysts, and entrepreneurs.</div>
-        </div>
-        <div className="col-12 col-md-3 no-margin no-overflow">
-          <div className="about-profile-img-container">
-            <img className="about-profile-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/26239593_1256384884462568_199943898728075355_n.jpg" />
+
           </div>
-        </div>
-        <div className="col-12 col-md-3 no-margin no-overflow">
-          <div className="about-profile-img-container">
-            <img className="about-profile-img" src="https://d1raprm0ezfai1.cloudfront.net/Website+images+used/26239593_1256384884462568_199943898728075355_n.jpg" />
+          <div className="col-6 col-md-3 about-us-profile-section-container">
+            <div className="about-us-profile-section-img-container about-profile-img-2">
+            </div>
+          </div>
+          <div className="col-6 col-md-3 about-us-profile-section-container">
+            <div className="about-us-profile-section-img-container about-profile-img-3">
+            </div>
+
           </div>
         </div>
         <FooterComponent />
@@ -40,3 +41,30 @@ class AboutComponent extends Component {
 }
 
 export default AboutComponent;
+/*
+<div className="row about-profile-height no-overflow">
+  <div className="col-12 col-md-3 no-margin max-height">
+    <div className="about-profile-img-container">
+
+    </div>
+
+  </div>
+  <div className="col-12 col-md-3 about-profile-img-text-container text-align-center bg-teal max-height">
+    <span className="about-profile-title"><span className="bold">OUR</span></span>
+    <br/>
+    <span className="about-profile-title">TEAM</span>
+    <br/><span className="big-backslash belinda">/</span>
+    <br/><div className="about-profile-description">Our team is excited to solve this problem for ourselves and the awesome women in our lives. We hail from Taiwan, Korea, and Spain. Our strength lies in our team's experiences as strategy consultants, nail technicians, 3D printing manufacturing analysts, and entrepreneurs.</div>
+  </div>
+  <div className="col-12 col-md-3 no-margin no-overflow max-height">
+    <div className="about-profile-img-container">
+      <div className="about-profile-img-container about-profile-img-2" />
+    </div>
+  </div>
+  <div className="col-12 col-md-3 no-margin no-overflow max-height">
+    <div className="about-profile-img-container">
+      <div className="about-profile-img-container about-profile-img-3" />
+    </div>
+  </div>
+</div>
+*/

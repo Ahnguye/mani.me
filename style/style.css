@@ -113,6 +113,7 @@ a:hover {
     display: block;
     text-align: right;
     min-width: 160px;
+    white-space: nowrap;
 }
 
 .dropdown:hover .dropdown-content {
@@ -750,6 +751,7 @@ select.Input-box {
   padding-bottom: 200px;
   background-color: #57496F;
   background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/Marble.png");
+  background-size: cover;
 }
 
 .custom-container-3 {
@@ -1147,23 +1149,69 @@ select.Input-box {
   About Page
 */
 
-.about-profile-img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
 
-.about-technology-img {
-  flex-shrink: 0;
-  width: 100%;
-}
 
-.about-profile-img-container {
-  display: flex;
+
+.about-us-profile-section-container {
+  position: relative;
+  padding-top: 35%;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
 }
+
+.about-us-profile-section-img-container {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.about-us-profile-section-text {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10%;
+  text-align: center;
+}
+.about-profile-title {
+  font-size: 80px;
+  line-height: 70px;
+  margin-bottom: 100px;
+}
+.about-profile-description { color: #00305B; }
+.big-backslash { font-size: 70px; line-height: 70px; }
+
+.about-profile-img-1 {
+  background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/26239593_1256384884462568_199943898728075355_n.jpg");
+}
+.about-profile-img-2 {
+  background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/IMG_0987.JPG");
+}
+.about-profile-img-3 {
+  background-position: 20% 0%;
+  background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/IMG_0988.JPG");
+}
+
+
+
+
+/*
+
+  About Tech Page
+
+*/
 
 .about-tech-container {
   height: 400px !important;
@@ -1212,17 +1260,10 @@ select.Input-box {
   overflow: hidden;
 }
 
-.about-profile-title { font-size: 80px; line-height: 70px; }
-.about-profile-description {
-  color: #00305B;
-  padding: 50px;
-}
-.bold { font-style: oblique; }
-.big-backslash { font-size: 70px; line-height: 70px; }
+ .max-height {
+   height: 100%;
+ }
 
-.about-profile-height {
-  height: 600px;
-}
 
 /*
   Subscription
