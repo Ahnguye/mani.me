@@ -7,7 +7,7 @@ export default class SplashPage extends Component {
       <div className="row">
 
         <div className="banner-wrapper">
-          
+
           <div className="belinda-heading-wrapper">
             <div className="belinda-heading font-white">
               <div className="belinda-heading-text">Welcome</div>
@@ -186,7 +186,7 @@ export default class SplashPage extends Component {
           </div>
         </div>
 
-
+        <div className="testimonials-wrapper-block">
         <div className="row justify-content-center testimonials-wrapper">
           <div className="col-12">
             <div className="testimonials-heading belinda">
@@ -209,7 +209,7 @@ export default class SplashPage extends Component {
             <br/><br/><span className="bold">Joy</span>, Consultant
           </div>
         </div>
-
+        </div>
 
         <div className="custom-container-3">
           <div className="custom-mission">

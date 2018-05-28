@@ -1,30 +1,13 @@
-@media only all and (max-width: 479px) {
-  .belinda-heading-text {
 
-  }
+@media only all and (min-width: 1201px) {
+
 }
-@media only all and (min-width: 480px) {
-  .plans-items-ul { padding: 0 !important; }
-  .plans-items-li {
-    flex-basis: 100%;
-    padding: 20%;
-  }
-}
-@media only all and (min-width: 768px) {
-  .belinda-heading-text { font-size: 80px; }
-  .belinda-heading { margin-left: 10%; }
-  h1 { font-size: 2.0rem !important; }
-  .splash-grid-button-wrapper {
-    width: 80%;
-  }
-  .plans-items-wrapper { margin-top: 100px; }
-}
-@media only all and (min-width: 1024px) {
+@media only all and (max-width: 1201px) {
   h1 { font-size: 2.5rem !important; }
-  .belinda-heading-text { font-size: 120px; }
+  .belinda-heading-text { font-size: 100px; }
   .belinda-heading {
     transform: translate(0%, -30%);
-    margin-left: 15%;
+    margin-left: 12%;
    }
   .splash-grid-button-wrapper {
     width: 85%;
@@ -36,21 +19,57 @@
     padding: 10px;
   }
 }
-
-@media only all and (min-width: 1200px) {
-
-}
-@media only all and (max-width: 1201px) {
-
-}
-@media only all and (max-width: 1200px) {
-
-}
 @media only all and (max-width: 1024px) {
-
+  .belinda-heading-text { font-size: 80px; }
+  .belinda-heading {
+    transform: translate(0%, -10%);
+    margin-left: 10%;
+  }
+  h1 { font-size: 2.0rem !important; }
+  .splash-grid-button-wrapper {
+    width: 80%;
+  }
+  .plans-items-wrapper { margin-top: 100px; }
+  .plans-items-ul { padding: 0 !important; }
+  .plans-items-li {
+    flex-basis: 100%;
+    padding: 20%;
+  }
+  .grid-splash-page-item {
+    height: auto;
+    flex-basis: 40%;
+    padding-top: 40%;
+  }
+  .splash-grid-button-wrapper { justify-content: center; }
+  .splash-image-carousel-img {
+    max-height: 150px;
+    margin: 4px;
+    margin-left: 0px;
+  }
 }
 @media only all and (max-width: 768px) {
-
+  .belinda-heading-text {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .belinda-heading {
+    transform: translate(0%, 0%);
+    margin-left: 4%;
+  }
+  .grid-splash-page-item {
+    height: auto;
+    flex-basis: 60%;
+    padding-top: 60%;
+  }
+  .splash-grid-button-wrapper { justify-content: center; }
+  .testimonials-wrapper {
+    padding: 10%;
+  }
+  .icon-wrapper { padding: 10%; }
+  .icon-line { width: 10%; }
+  .icons { margin-top: 0px; }
+  .icon-container { padding-bottom: 40px; }
+  h1 { font-size: 1.5rem !important; }
 }
 @media only all and (max-width: 480px) {
 

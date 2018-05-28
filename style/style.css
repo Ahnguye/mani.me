@@ -1044,6 +1044,11 @@ select.Input-box {
   text-align: center;
 }
 
+.testimonials-wrapper-block {
+  display: block;
+  width: 100%;
+}
+
 .testimonials-wrapper {
   max-width: 800px;
   width: 100%;
