@@ -1213,28 +1213,42 @@ select.Input-box {
 
 */
 
+.about-tech-wrapper {
+  position: relative;
+  padding-top: 30%;
+}
+
 .about-tech-container {
-  height: 400px !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 15%;
 }
 
+.about-tech-title {
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 100px;
+}
+
+.about-item-tech-wrapper {
+  position: relative;
+  padding-top: 25%;
+}
 .about-tech-item-container {
-  height: 400px !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
-.about-profile-img-text-container {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 100px;
-}
 
-.about-tech-img-text-container {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 50px !important;
-}
 
 .tech-item-title {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   letter-spacing: 3px;
   margin-top: 20%;
