@@ -32,6 +32,9 @@
   .belinda-heading-text { font-size: 100px; }
   .belinda-heading {
     transform: translate(0%, -30%);
+    -moz-transform: translate(0%, -30%);
+    -ms-transform: translate(0%, -30%);
+    -webkit-transform: translate(0%, -30%);
     margin-left: 12%;
    }
   .splash-grid-button-wrapper {
@@ -75,6 +78,9 @@
   .belinda-heading-text { font-size: 80px; }
   .belinda-heading {
     transform: translate(0%, -10%);
+    -moz-transform: translate(0%, -10%);
+    -ms-transform: translate(0%, -10%);
+    -webkit-transform: translate(0%, -10%);
     margin-left: 10%;
   }
   h1 { font-size: 2.0rem !important; }
@@ -141,6 +147,11 @@
 
 
 @media only all and (max-width: 768px) {
+  /* Nav Bar */
+  .navbar {
+    padding: 0;
+  }
+  .logo { height: 45px; }
   /* Splash Page */
   .belinda-heading-text {
     font-size: 60px;
@@ -148,6 +159,9 @@
   }
   .belinda-heading {
     transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
     margin-left: 4%;
   }
   .grid-splash-page-item {
@@ -181,6 +195,9 @@
     left: 0;
     top: 50%;
     transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
   }
   .logo { margin-right: 0px; }
   .navbar-middle {
@@ -277,6 +294,9 @@
   }
   .belinda-heading-text {
     transform: translate(0%, 25%) !important;
+    -moz-transform: translate(0%, 25%) !important;
+    -ms-transform: translate(0%, 25%) !important;
+    -webkit-transform: translate(0%, 25%) !important;
     font-size: 50px !important;
     margin-bottom: 30px;
   }
