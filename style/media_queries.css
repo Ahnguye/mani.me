@@ -292,6 +292,12 @@
   .banner-subheading {
     font-size: 16px;
   }
+  .belinda-heading {
+    transform: translate(0%, -60%);
+    -moz-transform: translate(0%, -60%);
+    -ms-transform: translate(0%, -60%);
+    -webkit-transform: translate(0%, -60%);
+  }
   .belinda-heading-text {
     transform: translate(0%, 25%) !important;
     -moz-transform: translate(0%, 25%) !important;
@@ -299,6 +305,7 @@
     -webkit-transform: translate(0%, 25%) !important;
     font-size: 50px !important;
     margin-bottom: 30px;
+    margin-top: 0px;
   }
   h1 {
     padding-left: 5%;
