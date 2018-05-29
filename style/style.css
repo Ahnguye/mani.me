@@ -1290,6 +1290,9 @@ select.Input-box {
   justify-content: center;
   align-items: center;
   height: 400px;
+  background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/subscriptions/subscription1.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .subscription-banner-picture {
   min-width: 100%;
@@ -1310,6 +1313,15 @@ select.Input-box {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.subscription-icon-container {
+  max-width: 1000px;
+}
+
+.subscription-icon-text {
+  margin-top: 20px;
+  color: #616161;
 }
 
 .subscription-button {

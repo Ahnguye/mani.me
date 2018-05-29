@@ -63,6 +63,12 @@
   .tech-item-description {
     font-size: 14px;
   }
+  /* Subscription Page */
+  .subscription-icon-container {
+    padding: 40px;
+    padding-bottom: 0px;
+  }
+
 }
 @media only all and (max-width: 1024px) {
   /* Splash Page */
@@ -119,6 +125,16 @@
     font-size: 12px;
     padding-left: 10px !important;
     padding-right: 10px !important;
+  }
+  /* Subscription Page */
+  .icon-container {
+    flex: 50% !important;
+    max-width: 50% !important;
+    margin-bottom: 10%;
+  }
+  .video-panel {
+    flex: 95% !important;
+    max-width: 95% !important;
   }
 }
 
@@ -194,6 +210,30 @@
     max-width: 50% !important;
   }
   .about-item-tech-wrapper { padding-top: 35%; }
+  /* Subscription Page */
+
+  .icon-container {
+    flex: 100% !important;
+    max-width: 100% !important;
+  }
+  .subscription-icon-text {
+    font-size: 24px;
+  }
+  .subscription-icon-container {
+    padding: 0px;
+  }
+  .video-caption-text {
+    margin-left: 2%;
+  }
+  .subscription-button { margin-top: 0px; }
+  .video-panel {
+    flex: 100% !important;
+    max-width: 100% !important;
+  }
+  .subscription-banner-title {
+    font-size: 100px;
+    margin-bottom: -45px;
+  }
 }
 
 @media only all and (max-width: 620px) {
@@ -219,6 +259,9 @@
   }
   .about-tech-description { font-size: 14px; }
   .about-tech-image { display: none; }
+  /* Subscription Page */
+  .video-caption-text { font-size: 28px; }
+  .video-caption-subheading { font-size: 14px; }
 }
 
 
@@ -227,6 +270,7 @@
   .navbar {
     padding: 0 !important;
   }
+  .logo { height: 40px; }
   /* Splash Page */
   .banner-subheading {
     font-size: 16px;
@@ -323,4 +367,16 @@
   .about-item-tech-wrapper { padding-top: 50%; }
   .tech-item-title { margin-top: 10%; font-size: 14px; }
   .tech-item-description { font-size: 12px; }
+  /* Subscription Page */
+
+  .video-caption-text { font-size: 24px; }
+  .video-caption-subheading { font-size: 10px; }
+  .subscription-banner-title {
+    font-size: 50px;
+    margin-bottom: -22px;
+  }
+  .subscription-banner-wrapper {
+    height: 250px;
+  }
+
 }
