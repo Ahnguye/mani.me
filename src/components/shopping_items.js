@@ -43,7 +43,7 @@ class ShoppingItems extends Component {
     const link = '/shop/item/' + item.name;
 
     return (
-        <Link to={link} className="shopping-item col-12 col-sm-6 col-md-5 col-lg-3">
+        <Link to={link} className="col-12 col-sm-6 col-md-4 shopping-item">
           <img className="shopping-item-picture" src={item.url}/>
           <div className="shopping-item-icon-container">
             <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/manime_trans.png'/>
@@ -60,11 +60,11 @@ class ShoppingItems extends Component {
     });
 
     return (
-      <div>
-        <div className="row-eq-height test">
-          {shoppingItemsArray}
-        </div>
+
+      <div className="row-eq-height test">
+        {shoppingItemsArray}
       </div>
+
 
     );
   }

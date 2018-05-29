@@ -205,6 +205,8 @@ a:hover {
   bottom: 0;
   top: 0;
   font-size: 120px;
+  height: 100%;
+  weight: 100%;
 }
 
 .belinda-heading {
@@ -340,10 +342,12 @@ ul {
   white-space: nowrap;
   align-self: flex-start;
   margin-top: 20px;
+  width: 10%;
 }
 
 .shopping-item-main-menu {
   box-sizing: border-box;
+  width: 90%;
 }
 
 .shopping-item-wrapper {
@@ -354,6 +358,7 @@ ul {
   user-select: none;
   justify-content: center;
   align-items: center;
+
 }
 
 .shopping-item-container {
@@ -393,14 +398,17 @@ ul {
   font-weight: 550;
 }
 
- .shopping-item {
+.shopping-item {
     display: flex;
     flex-direction: column;
     padding: 15px;
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: 0 !important;
     height: 450px;
+    flex: 33% !important;
+    max-width: 33% !important;
+
 }
 
 @media only all and (min-width: 768px) {
@@ -427,6 +435,8 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .shopping-item-detail-container {

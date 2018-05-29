@@ -6,15 +6,14 @@ export default class SplashPage extends Component {
     return (
       <div className="row">
 
-        <div className="banner-wrapper">
 
+        <div className="banner-wrapper">
           <div className="belinda-heading-wrapper">
             <div className="belinda-heading font-white">
               <div className="belinda-heading-text">Welcome</div>
               <div className="avenir banner-subheading">To your tailor-fitted, hassle-free manicure</div>
             </div>
           </div>
-
         </div>
 
 

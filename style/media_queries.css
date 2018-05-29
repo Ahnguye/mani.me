@@ -71,7 +71,17 @@
     padding: 40px;
     padding-bottom: 0px;
   }
-
+  /* Shopping Items Page */
+  .shopping-item {
+     flex: 50% !important;
+     max-width: 50% !important;
+     height: 600px;
+  }
+  .shopping-item-picture { height: 75%; }
+  .shopping-item-icon-container {
+    width: 75%;
+    margin: auto;
+  }
 }
 @media only all and (max-width: 1024px) {
   /* Splash Page */
@@ -141,6 +151,22 @@
   .video-panel {
     flex: 95% !important;
     max-width: 95% !important;
+  }
+  /* Shopping Items Page */
+  .shopping-item {
+     flex: 50% !important;
+     max-width: 50% !important;
+     height: 425px;
+
+  }
+  .shopping-item-picture { height: 75%; }
+  .shopping-item-icon-container {
+    width: 100%;
+    margin: auto;
+  }
+  .test {
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 
@@ -251,12 +277,36 @@
     font-size: 100px;
     margin-bottom: -45px;
   }
+  /* Shopping Items Page */
+  .shopping-item {
+     flex: 50% !important;
+     max-width: 50% !important;
+     height: 400px;
+  }
+  .shopping-item-picture { height: 65%; }
+
 }
 
 @media only all and (max-width: 620px) {
   /* Splash Page */
   /* About Page */
   .about-profile-description { font-size: 10px; }
+  .shopping-item {
+     flex: 100% !important;
+     max-width: 100% !important;
+     height: 450px;
+  }
+  /* Shopping Items Page */
+  .shopping-item-picture { height: 75%; }
+  .shopping-item-icon-container {
+    width: 70%;
+    margin: auto;
+    height: 0px;
+  }
+  .test {
+    padding-left: 15%;
+    padding-right: 4%;
+  }
 }
 
 @media only all and (max-width: 576px) {
@@ -279,6 +329,12 @@
   /* Subscription Page */
   .video-caption-text { font-size: 28px; }
   .video-caption-subheading { font-size: 14px; }
+  /* Shopping Items Page */
+  .shopping-item-icon-container {
+    width: 90%;
+    margin: auto;
+    height: 0px;
+  }
 }
 
 
@@ -292,12 +348,6 @@
   .banner-subheading {
     font-size: 16px;
   }
-  .belinda-heading {
-    transform: translate(0%, -60%);
-    -moz-transform: translate(0%, -60%);
-    -ms-transform: translate(0%, -60%);
-    -webkit-transform: translate(0%, -60%);
-  }
   .belinda-heading-text {
     transform: translate(0%, 25%) !important;
     -moz-transform: translate(0%, 25%) !important;
@@ -305,7 +355,6 @@
     -webkit-transform: translate(0%, 25%) !important;
     font-size: 50px !important;
     margin-bottom: 30px;
-    margin-top: 0px;
   }
   h1 {
     padding-left: 5%;
@@ -404,6 +453,14 @@
   }
   .subscription-banner-wrapper {
     height: 250px;
+  }
+  /* Shopping Item Page */
+  .shopping-item-wrapper {
+    flex-direction: column;
+  }
+  .test {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
 }
