@@ -2,7 +2,28 @@ import React, { Component } from 'react';
 
 
 export default class NavMenu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menu: false
+    };
+  }
+
+  menuToggle = () => {
+    let mobileMenu = document.querySelector('.nav-menu-mobile-menu');
+    if (this.state.menu == false) {
+      mobileMenu.style.display = 'block';
+      this.setState({ menu: true });
+    } else {
+      mobileMenu.style.display = 'none';
+      this.setState({ menu: false });
+    }
+  }
+
   render() {
+
+
+
     return (
       <div>
         <nav className="navbar navbar-default">
@@ -10,9 +31,10 @@ export default class NavMenu extends Component {
             <a className="logo-icon-container" href="/#">
               <img className="logo" src="https://d1raprm0ezfai1.cloudfront.net/Logo/Manime+logo.png" />
             </a>
-            <div className="nav-menu-mobile-menu-items">
+            <div onClick={this.menuToggle} className="nav-menu-mobile-menu-items">
               <img className="menu-icon" src="https://d1raprm0ezfai1.cloudfront.net/websiteicons/baseline-menu-24px.svg" />
             </div>
+
             <div className="nav-menu-items-wrapper">
               <div className="nav-menu-menu-items">
                 <div className="dropdown">
@@ -47,8 +69,33 @@ export default class NavMenu extends Component {
             </div>
 
           </div>
-
         </nav>
+        <div className="nav-menu-mobile-menu">
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/about">OUR TEAM</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/tech">OUR TECHNOLOGY</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/press">IN THE PRESS</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/subscription">TREAT.ME</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/subscription">PAMPER.ME</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/subscription">DAZZLE.ME</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/shop">ARTIST GALLERY</a>
+          </div>
+          <div className="nav-menu-mobile-menu-item">
+            <a href="/shop">USER CREATIONS</a>
+          </div>
+        </div>
       </div>
     );
   }

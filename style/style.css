@@ -42,6 +42,22 @@ body {
   display: none;
 }
 
+.nav-menu-mobile-menu {
+  display: none;
+  height: 350px;
+  background-color: #F7F7F7;
+  border-top: 1px solid #dedede;
+  color: #b1b1b1;
+}
+
+.nav-menu-mobile-menu-item {
+  padding: 5px;
+  padding-left: 15px;
+  border-top: 0px solid #dedede;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
 .menu-icon {
   height: 30px;
 }
