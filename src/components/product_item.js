@@ -41,7 +41,8 @@ class ProductItem extends Component {
 
   render() {
     return (
-      <div className="row shopping-item-detail-container row-eq-height">
+      <div className="shopping-item-detail-container">
+      <div className="row row-eq-height justify-content-center">
         <div className="shopping-item-detail-left-container col-5 col-md-1">
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
@@ -49,30 +50,25 @@ class ProductItem extends Component {
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
         </div>
-        <div className="shopping-item-detail-middle-container col-9 col-md-5">
+        <div className="shopping-item-detail-middle-container col-12 col-md-6">
 
           <img className="detail-item-picture" src={this.state.item.url}/>
         </div>
-        <div className="shopping-item-detail-right-container col-12 col-md-4">
+        <div className="shopping-item-detail-right-container col-12 col-md-6">
           <div className="detail-info">
             <h4>allison paris</h4>
             <h4 className="detail-info-title-description">Cobalt</h4>
             <p>{this.state.item.price}$ for one-time purchase</p>
           </div>
           <div className="detail-form">
-
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/01.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/02.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/03.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/04.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/05.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/06.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/07.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/08.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/09.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/10.png'/>
-            <img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/11.png'/>
-
+            <label className="input-zipcode">SIZES</label>
+            <br></br>
+            <select className="select-detail">
+              <option label="Select"></option>
+              <option label="XS"></option>
+              <option label="S"></option>
+              <option label="M"></option>
+            </select>
             <br></br>
             <br></br>
             <label className="input-zipcode">SUBSCRIPTION</label>
@@ -102,7 +98,7 @@ class ProductItem extends Component {
 
         </div>
       </div>
-
+      </div>
     );
   }
 
@@ -110,12 +106,18 @@ class ProductItem extends Component {
 
 export default ProductItem;
 /*
-<label className="input-zipcode">SIZES</label>
-<br></br>
-<select className="select-detail">
-  <option label="Select"></option>
-  <option label="XS"></option>
-  <option label="S"></option>
-  <option label="M"></option>
-</select>
+
+*/
+/*
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/01.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/02.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/03.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/04.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/05.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/06.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/07.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/08.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/09.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/10.png'/>
+<img className="shopping-item-icon-img" src='https://d1raprm0ezfai1.cloudfront.net/Required+graphics/11.png'/>
 */
