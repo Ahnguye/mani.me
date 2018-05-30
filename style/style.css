@@ -468,7 +468,7 @@ ul {
 .shopping-item-detail-left-container {
   display: flex;
   flex-direction: column;
-
+  display: none;
 }
 
 .detail-item-grid-picture {

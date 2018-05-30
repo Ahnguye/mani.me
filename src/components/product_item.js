@@ -41,7 +41,7 @@ class ProductItem extends Component {
 
   render() {
     return (
-      <div className="shopping-item-detail-container row-eq-height">
+      <div className="row shopping-item-detail-container row-eq-height">
         <div className="shopping-item-detail-left-container col-5 col-md-1">
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
           <img className="detail-item-grid-picture" src={this.state.item.url}/>
