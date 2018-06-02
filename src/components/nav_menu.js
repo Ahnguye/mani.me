@@ -53,9 +53,9 @@ export default class NavMenu extends Component {
                 <div className="dropdown">
                   <button className="dropbtn">HOW IT WORKS</button>
                   <div className="dropdown-content">
-                    <a href="/subscription">TREAT.ME</a>
-                    <a href="/subscription">PAMPER.ME</a>
-                    <a href="/subscription">DAZZLE.ME</a>
+                    <a href="/treatme">TREAT.ME</a>
+                    <a href="/pamperme">PAMPER.ME</a>
+                    <a href="/dazzleme">DAZZLE.ME</a>
                   </div>
                 </div>
                 <div className="dropdown">
@@ -81,13 +81,13 @@ export default class NavMenu extends Component {
             <a href="/press">IN THE PRESS</a>
           </div>
           <div className="nav-menu-mobile-menu-item">
-            <a href="/subscription">TREAT.ME</a>
+            <a href="/treatme">TREAT.ME</a>
           </div>
           <div className="nav-menu-mobile-menu-item">
-            <a href="/subscription">PAMPER.ME</a>
+            <a href="/pamperme">PAMPER.ME</a>
           </div>
           <div className="nav-menu-mobile-menu-item">
-            <a href="/subscription">DAZZLE.ME</a>
+            <a href="/dazzleme">DAZZLE.ME</a>
           </div>
           <div className="nav-menu-mobile-menu-item">
             <a href="/shop">ARTIST GALLERY</a>

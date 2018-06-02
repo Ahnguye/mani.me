@@ -91,7 +91,9 @@ export default class AppComponent extends Component {
         <Route path="/about" component={AboutComponent} />
         <Route path="/tech" component={OurTechnologyComponent} />
         <Route path="/press" component={PressComponent} />
-        <Route path="/subscription" component={SubscriptionDetailComponent} />
+        <Route path="/treatme" render={() => <SubscriptionDetailComponent subscriptionType={1} />}/>
+        <Route path="/pamperme" render={() => <SubscriptionDetailComponent subscriptionType={2} />}/>
+        <Route path="/dazzleme" render={() => <SubscriptionDetailComponent subscriptionType={3} />}/>
 
         <Route exact path="/shop" component={ShoppingComponent} />
         <Route path="/shop/item/:id" render={this.productItemContainer} />

@@ -118,8 +118,8 @@ export default class SplashPage extends Component {
 
         </div>
 
-        <div class="custom-container-2">
-          <div class="custom-mission">
+        <div className="custom-container-2">
+          <div className="custom-mission">
           <div className="grid-splash-page-item-content-line-white"></div>
           <h1 className="belinda">Our Mission</h1>
           <br/>We want to empower women, everywhere. By creating personalized, hassle-free manicures, Mani.Me supports #ladybosses and #supermoms to spend their time on the things that matter (not rushing to salons to stay polished). Nail artists receive compensation for each purchase of their design, so with every manicure, we are raising each other up.</div>

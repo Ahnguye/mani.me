@@ -168,6 +168,14 @@ a:hover {
   border-width: medium;
 }
 
+.svg-icon {
+  max-height: 140px;
+  align-self: center;
+  padding-bottom: 20px;
+  border-width: medium;
+  width: 100%;
+}
+
 .icon-line {
   width: 30%;
   border-bottom: 3px solid black;
@@ -1423,7 +1431,7 @@ select.Input-box {
   justify-content: center;
   align-items: center;
   height: 400px;
-  background-image: url("https://d1raprm0ezfai1.cloudfront.net/Website+images+used/subscriptions/subscription1.jpg");
+
   background-position: center;
   background-size: cover;
 }
