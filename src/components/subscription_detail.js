@@ -96,7 +96,11 @@ class SubscriptionDetailComponent extends Component {
                 {this.state.icon4_body}
               </div>
             </div>
-            <div className="col-12 text-align-center"><button className="detail-add-cart subscription-button">{this.state.button_text}</button></div>
+            <div className="col-12 text-align-center">
+              <a href="/shop">
+                <button className="detail-add-cart subscription-button">{this.state.button_text}</button>
+              </a>
+            </div>
 
             <div className="col-10 bg-tan video-panel">
               <div className="video-caption">

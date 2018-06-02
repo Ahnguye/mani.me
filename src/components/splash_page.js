@@ -67,7 +67,9 @@ export default class SplashPage extends Component {
                     <li>2 day delivery</li>
                   </ul>
                 </div>
-                <div className="plans-item-content-button">Learn More</div>
+                <a href="/treatme">
+                  <div className="plans-item-content-button">Learn More</div>
+                </a>
               </div>
             </li>
             <li className="plans-items-li">
@@ -83,7 +85,9 @@ export default class SplashPage extends Component {
                   </ul>
 
                 </div>
-                <div className="plans-item-content-button">Learn More</div>
+                <a href="/pamperme">
+                  <div className="plans-item-content-button">Learn More</div>
+                </a>
               </div>
             </li>
             <li className="plans-items-li">
@@ -99,7 +103,9 @@ export default class SplashPage extends Component {
                   </ul>
 
                 </div>
-                <div className="plans-item-content-button">Learn More</div>
+                <a href="/dazzleme">
+                  <div className="plans-item-content-button">Learn More</div>
+                </a>
               </div>
             </li>
           </ul>
@@ -135,8 +141,9 @@ export default class SplashPage extends Component {
               <div className="grid-splash-page-item-content-line"></div>
               <h4 className="grid-splash-page-item-content-title avenir">GALLERY</h4>
               <br/>
-              <div className="grid-splash-page-item-content-button">VISIT NOW ></div>
-
+              <a href="/shop">
+                <div className="grid-splash-page-item-content-button">VISIT NOW ></div>
+              </a>
             </div>
           </div>
           <div className="grid-splash-page-item">
@@ -149,7 +156,9 @@ export default class SplashPage extends Component {
               <div className="grid-splash-page-item-content-line"></div>
               <h4 className="grid-splash-page-item-content-title avenir">MEDIA & PRESS</h4>
               <br/>
-              <div className="grid-splash-page-item-content-button">READ MORE ></div>
+              <a href="/press">
+                <div className="grid-splash-page-item-content-button">READ MORE ></div>
+              </a>
             </div>
           </div>
           <div className="grid-splash-page-item">
@@ -167,7 +176,9 @@ export default class SplashPage extends Component {
               <div className="grid-splash-page-item-content-line-white"></div>
               <h4 className="grid-splash-page-item-content-title avenir">SHOP</h4>
               <br/>
-              <div className="grid-splash-page-item-content-button">BUY NOW ></div>
+              <a className="font-white" href="/shop">
+                <div className="grid-splash-page-item-content-button">BUY NOW ></div>
+              </a>
             </div>
           </div>
           <div className="grid-splash-page-item">
@@ -180,7 +191,9 @@ export default class SplashPage extends Component {
               <div className="grid-splash-page-item-content-line"></div>
               <h4 className="grid-splash-page-item-content-title avenir">TECHNOLOGY</h4>
               <br/>
-              <div className="grid-splash-page-item-content-button">LEARN MORE ></div>
+              <a href="/tech">
+                <div className="grid-splash-page-item-content-button">LEARN MORE ></div>
+              </a>
             </div>
           </div>
         </div>

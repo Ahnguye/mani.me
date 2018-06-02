@@ -29,7 +29,7 @@ export default class NavMenu extends Component {
         <nav className="navbar navbar-default">
           <div className="navbar-middle">
             <a className="logo-icon-container" href="/#">
-              <img className="logo" src="https://d1raprm0ezfai1.cloudfront.net/Logo/Manime+logo.png" />
+              <img className="logo" src="https://d1raprm0ezfai1.cloudfront.net/Logo/Logo_Final-Assets-3.png" />
             </a>
             <div onClick={this.menuToggle} className="nav-menu-mobile-menu-items">
               <img className="menu-icon" src="https://d1raprm0ezfai1.cloudfront.net/websiteicons/baseline-menu-24px.svg" />
@@ -47,7 +47,6 @@ export default class NavMenu extends Component {
                   <div className="dropdown-content">
                     <a href="/about">OUR TEAM</a>
                     <a href="/tech">OUR TECHNOLOGY</a>
-                    <a href="/press">IN THE PRESS</a>
                   </div>
                 </div>
                 <div className="dropdown">
@@ -76,9 +75,6 @@ export default class NavMenu extends Component {
           </div>
           <div className="nav-menu-mobile-menu-item">
             <a href="/tech">OUR TECHNOLOGY</a>
-          </div>
-          <div className="nav-menu-mobile-menu-item">
-            <a href="/press">IN THE PRESS</a>
           </div>
           <div className="nav-menu-mobile-menu-item">
             <a href="/treatme">TREAT.ME</a>

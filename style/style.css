@@ -30,10 +30,16 @@ body {
 }
 
 .logo {
-  height: 50px;
-  margin: 10px;
+  height: 60px;
+  margin: 5px;
   margin-right: 100px;
+
 }
+
+.logo:hover {
+  opacity: 0.6;
+}
+
 .nav-menu-container {
   width: 50%;
 }
@@ -44,9 +50,9 @@ body {
 
 .nav-menu-mobile-menu {
   display: none;
-  height: 350px;
+  height: auto;
+  padding-top: 4px;
   background-color: #F7F7F7;
-  border-top: 1px solid #dedede;
   color: #b1b1b1;
 }
 
@@ -55,7 +61,10 @@ body {
   padding-left: 15px;
   border-top: 0px solid #dedede;
   background-color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+}
+.nav-menu-mobile-menu-item:hover {
+
 }
 
 .menu-icon {
@@ -96,7 +105,7 @@ a {
 }
 
 a:hover {
-  color: pink !important;
+  color: #EECF83 !important;
 }
 
 
@@ -106,7 +115,15 @@ a:hover {
     padding: 16px;
     font-size: 16px;
     border: none;
+    outline: none;
     cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:active,
+.dropbtn:visited,
+.dropbtn:link {
+  outline: none;
 }
 
 .dropdown {
@@ -137,7 +154,7 @@ a:hover {
 }
 
 .dropdown:hover .dropbtn {
-    color: pink;
+    color: #EECF83;
 }
 
 .banner-wrapper {
@@ -768,13 +785,16 @@ select.Input-box {
   margin-bottom: 15px;
 }
 .Checkout-submit-button-3:hover {
-  background-color: pink;
+  background-color: #EECF83;
+  outline: none;
 }
 .Checkout-submit-button-3:focus {
-  background-color: pink;
+  background-color: #EECF83;
+  outline: none;
 }
 .Checkout-submit-button-3::selection {
-  background-color: pink;
+  background-color: #EECF83;
+  outline: none;
 }
 
 
