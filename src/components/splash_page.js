@@ -9,13 +9,12 @@ export default class SplashPage extends Component {
 
         <div className="banner-wrapper">
           <div className="belinda-heading-wrapper">
-            <div className="belinda-heading font-white">
+            <div className="belinda-heading font-white fade-translate">
               <div className="belinda-heading-text">Welcome</div>
               <div className="avenir banner-subheading">To your tailor-fitted, hassle-free manicure</div>
             </div>
           </div>
         </div>
-
 
         <div className="icons-title avenir"><h1 className="off-grey">Designer nails made for you, delivered to your door</h1></div>
         <div className="icons">

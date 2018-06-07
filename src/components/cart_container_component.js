@@ -73,7 +73,7 @@ class CartContainerComponent extends React.Component {
       subscription: this.state.subscription
     }
     //console.log(token);
-    axios.post("https://manimebackend.herokuapp.com/",
+    axios.post("https://anachrion.com/",
     //axios.post("http://localhost:5000/",
       {
         token: token,
